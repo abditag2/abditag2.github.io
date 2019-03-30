@@ -35,7 +35,7 @@ disqus:
 
 # if you don't have any of social below, comment the line
 # facebook: myfacebook
-# twitter: mytwitter
+twitter: abdabad12
 # google: mygoogle
 # instagram: myinstagram
 # pinterest: mypinterest
@@ -48,24 +48,24 @@ github: abditag2
 stackoverflow: 2288828/fardin
 # quora: userquora
 # reddit: username
-medium: https://medium.com/@fardinghooli
+medium: @fardinghooli
 # vimeo: myvimeo
 # lanyrd: mylanyrd
 email: fardin.abdi@gmail.com
 
 authors:
     johndoe:
-        name: John Doe
-        bio: A Man who travels the world eating noodles
+        name: Fardin Abdi
+#         bio: A Man who travels the world eating noodles
         external-image: false
         picture: assets/images/profile.jpg
-        twitter: johndoe
-    jamesfoster:
-        name: James Foster
-        bio: A Man who develops software with coffee
-        external-image: false
-        picture: assets/images/james.jpg
-        twitter: jamesfoster
+        twitter: abdabad12
+#     jamesfoster:
+#         name: James Foster
+#         bio: A Man who develops software with coffee
+#         external-image: false
+#         picture: assets/images/james.jpg
+#         twitter: jamesfoster
 
 # do you want a larger site? change the option below
 # options: [normal, large] | default: normal
