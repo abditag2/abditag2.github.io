@@ -1,6 +1,6 @@
 # main text of home
-name: Fardin Abdi (فردین عبدی)
-bio: Hacker, Engineer, Computer Scientist
+name: Fardin Abdi
+bio: @Deep Learning Platform at Uber
 
 # twitter summary info
 # description: A blog about technology and stuff related
@@ -19,7 +19,8 @@ resume-url: https://www.dropbox.com/s/6gm026j88lgk8eo/Fardin_Abdi_Resume.pdf?dl=
 url: https://abditag2.github.io
 # your url: http://USERNAME.github.io
 
-permalink: /:title/
+# permalink: /:title/
+permalink: https://abditag2.github.io
 
 # To enable google analytics, supply your token below
 # analytics-google: 'UA-MYANALYTICS'
