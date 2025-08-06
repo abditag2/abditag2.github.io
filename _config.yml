@@ -1,6 +1,6 @@
 # main text of home
 name: Fardin Abdi
-bio: Deep Learning Platform at Uber
+bio: Principal Scientist | ML Tech Lead
 
 # twitter summary info
 # description: A blog about technology and stuff related
@@ -12,9 +12,9 @@ picture: assets/images/profile.jpg
 
 # If you want to include your resume, set to true
 # and specify source (external or local).
-resume: true
-resume-external: true
-resume-url: https://www.dropbox.com/s/6gm026j88lgk8eo/Fardin_Abdi_Resume.pdf?dl=1
+resume: false
+resume-external: false
+resume-url:
 
 url: https://abditag2.github.io
 # your url: http://USERNAME.github.io
@@ -57,7 +57,7 @@ email: fardin.abdi@gmail.com
 authors:
     johndoe:
         name: Fardin Abdi
-        bio: A Man who travels the world eating noodles
+        bio: Staff ML Engineer focused on risk, distributed systems, and LLM infrastructure
         external-image: false
         picture: assets/images/profile.jpg
         twitter: abdabad12
@@ -81,8 +81,8 @@ width: normal
 projects: false
 
 # if you don't need "about" or "blog", comment them out below
-about: true
-blog: true
+about: false
+blog: false
 
 # do you want to show the "read time" of the posts?
 read-time: true
