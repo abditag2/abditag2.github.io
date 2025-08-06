@@ -8,21 +8,20 @@ layout: page
 </p>
 
 ## About Me
-I am a Staff Machine Learning Engineer with over a decade of experience designing, building, and leading production-grade AI/ML systems at scale. My work spans risk modeling, large language model (LLM) agents, distributed deep learning platforms, and measurement modeling for high-traffic consumer products.
+I am a principal scientist at Amazon AGI labs with over a decade of experience designing, building, and leading production-grade AI/ML systems at scale.
 
-I thrive at the intersection of technical depth and cross-functional leadership, driving measurable business outcomes while upholding engineering excellence. Over my career, I’ve delivered hundreds of millions of dollars in impact, mentored engineering teams, and contributed extensively to open source (Horovod, distributed training frameworks) and applied ML research (100+ US patents, peer-reviewed publications).
+I thrive at the intersection of technical depth and cross-functional leadership, driving measurable business outcomes while upholding engineering excellence. Over my career, I’ve delivered hundreds of millions of dollars in impact, mentored engineering teams, and contributed to open source (Horovod, distributed training frameworks) and applied ML research (100+ US patents, peer-reviewed publications).
 
 ## Career Highlights
 ### Stripe – Staff ML Engineer, Risk (2022–Present)
-- Merchant Credit Risk Tech Lead for a 20+ engineer org; reduced high-risk merchant losses while minimizing false positives for legitimate businesses.
+- Merchant Credit Risk Tech Lead; reduced high-risk merchant losses while minimizing false positives for legitimate businesses.
 - Architected DetectiveGPT, Stripe’s LLM agent framework for automated merchant investigations, saving $10M+/year and adopted across Sales, Compliance, Crypto, and Strategy teams.
 - Led delivery of ML models for delinquency, loss estimation, user value, and churn, generating $15M+/year in savings.
-- Built Stripe’s first multi-head transformer leveraging unstructured merchant text data, netting $4M/year in incremental savings.
 - Drove infra robustness, live monitoring, feature pipeline quality, phased rollouts, and operational rigor.
 
 ### Pinterest – ML Engineer, Measurement Modeling (2020–2022)
-- Tech Lead for an 11-person conversion modeling team; set technical vision, evaluation frameworks, and operational standards.
-- Designed & launched Conversion User Match Prediction model (+10pp match rate), directly improving advertiser attribution.
+- Tech Lead for conversion modeling team; set technical vision, evaluation frameworks, and operational standards.
+- Improved Conversion User Match Prediction model, directly improving advertiser attribution.
 - Pioneered embedding-based candidate retrieval to future-proof attribution against browser privacy changes.
 
 ### Uber – ML Engineer, Michelangelo Deep Learning / UberAI (2018–2020)
@@ -45,11 +44,3 @@ Earlier roles include internships at Affirm (early engineering hire) and Apple.
 - Winner, Qualcomm Innovation Fellowship (2014, $100K).
 - Finalist, Qualcomm Innovation Fellowship (2016).
 - Outstanding Student Award, University of Tehran (Top 5%).
-
-## Expertise
-**ML Specialties:** Risk modeling, LLM agents, distributed training (Horovod, MPI), embedding retrieval, time-series modeling.
-
-**Languages/Frameworks:** Python, PyTorch, TensorFlow, Keras, SparkML, C/C++.
-
-**Systems/Infra:** Distributed systems design, GPU/CPU utilization optimization, production ML deployment, experimentation platforms.
-
