@@ -36,11 +36,11 @@ disqus:
 
 # if you don't have any of social below, comment the line
 # facebook: myfacebook
-twitter: abdabad12
+twitter: fardinabad
 # google: mygoogle
 # instagram: myinstagram
 # pinterest: mypinterest
-linkedin: fardin-abdi/
+linkedin: fardinabdi/
 # youtube: myyoutube
 # spotify: myspotify
 github: abditag2
@@ -49,7 +49,7 @@ github: abditag2
 stackoverflow: 2288828/fardin
 # quora: userquora
 # reddit: username
-medium: fardinghooli
+# medium: fardinghooli
 # vimeo: myvimeo
 # lanyrd: mylanyrd
 email: fardin.abdi@gmail.com
@@ -60,7 +60,7 @@ authors:
         bio: Staff ML Engineer focused on risk, distributed systems, and LLM infrastructure
         external-image: false
         picture: assets/images/profile.jpg
-        twitter: abdabad12
+        twitter: fardinabad
 #     jamesfoster:
 #         name: James Foster
 #         bio: A Man who develops software with coffee

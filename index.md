@@ -4,7 +4,7 @@ layout: page
 ---
 
 <p class="contact-info">
-  Seattle, WA • <a href="https://www.linkedin.com/in/fardin-abdi/">LinkedIn</a> • <a href="mailto:fardin.abdi@gmail.com">fardin.abdi@gmail.com</a> • +1-857-294-3925
+  Seattle, WA • <a href="https://www.linkedin.com/in/fardinabdi/">LinkedIn</a> • <a href="mailto:fardin.abdi@gmail.com">fardin.abdi@gmail.com</a> • +1-857-294-3925
 </p>
 
 ## About Me
