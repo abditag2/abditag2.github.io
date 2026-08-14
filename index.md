@@ -17,7 +17,7 @@ I thrive at the intersection of technical depth and cross-functional leadership,
 - Continual learning as a product primitive: models that keep acquiring new knowledge and capabilities without eroding what they already do well.
 - Closing the gap between frontier-model research and production reality, drawing on a decade of shipping ML systems in payments, ads, and infrastructure.
 
-If you’re building or investing in this space — or just want to compare notes — I’d love to talk. The fastest way to reach me is email: [fardin.abdi@gmail.com](mailto:fardin.abdi@gmail.com).
+If you want to talk, reach out — the fastest way is email: [fardin.abdi@gmail.com](mailto:fardin.abdi@gmail.com).
 
 ## Career Highlights
 ### Amazon – Principal Scientist, AGI Labs (2025–Present)
@@ -27,8 +27,8 @@ If you’re building or investing in this space — or just want to compare note
 
 ### Stripe – Staff ML Engineer, Risk (2022–2025)
 - Merchant Credit Risk Tech Lead; reduced high-risk merchant losses while minimizing false positives for legitimate businesses.
-- Architected Stripe’s LLM agent framework for automated merchant risk investigations, adopted across Sales, Compliance, Crypto, and Strategy teams.
-- Led delivery of ML models for delinquency, loss estimation, user value, and churn.
+- Architected DetectiveGPT, Stripe’s LLM agent framework for automated merchant risk investigations, adopted across Sales, Compliance, Crypto, and Strategy teams.
+- Led delivery of ML models for delinquency, loss estimation, user value, and churn, generating $15M+/year in savings.
 - Drove infra robustness, live monitoring, feature pipeline quality, phased rollouts, and operational rigor.
 
 ### Pinterest – ML Engineer, Measurement Modeling (2020–2022)
