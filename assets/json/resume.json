@@ -1,0 +1,140 @@
+{
+  "basics": {
+    "name": "Fardin Abdi",
+    "label": "Principal Scientist, Amazon AGI Labs",
+    "image": "",
+    "email": "fardin.abdi@gmail.com",
+    "summary": "Principal Scientist at Amazon AGI Labs with over a decade of experience designing, building, and leading production-grade AI/ML systems at scale. Focused on model customization for frontier models: continued pre-training with relational datasets and continual learning.",
+    "location": {
+      "city": "Seattle",
+      "countryCode": "US",
+      "region": "Washington"
+    },
+    "profiles": [
+      {
+        "network": "LinkedIn",
+        "username": "fardinabdi",
+        "url": "https://www.linkedin.com/in/fardinabdi/"
+      },
+      {
+        "network": "Google Scholar",
+        "username": "Fardin Abdi",
+        "url": "https://scholar.google.com/citations?user=rbakiUwAAAAJ"
+      },
+      {
+        "network": "GitHub",
+        "username": "abditag2",
+        "url": "https://github.com/abditag2"
+      }
+    ]
+  },
+  "work": [
+    {
+      "name": "Amazon AGI Labs",
+      "position": "Principal Scientist",
+      "location": "Seattle, WA",
+      "startDate": "2025",
+      "endDate": "",
+      "summary": "Model customization for frontier models.",
+      "highlights": [
+        "Leading work on model customization, enabling customers to adapt foundation models to their domains.",
+        "Continued pre-training (CPT) with relational datasets: methods to effectively learn from structured and tabular data.",
+        "Continual learning techniques that allow models to acquire new knowledge and capabilities without catastrophic forgetting."
+      ]
+    },
+    {
+      "name": "Stripe",
+      "position": "Staff ML Engineer, Risk",
+      "location": "Seattle, WA",
+      "startDate": "2022",
+      "endDate": "2025",
+      "summary": "Merchant Credit Risk Tech Lead.",
+      "highlights": [
+        "Reduced high-risk merchant losses while minimizing false positives for legitimate businesses.",
+        "Architected DetectiveGPT, Stripe's LLM agent framework for automated merchant risk investigations, adopted across Sales, Compliance, Crypto, and Strategy teams.",
+        "Led delivery of ML models for delinquency, loss estimation, user value, and churn, generating $15M+/year in savings.",
+        "Drove infra robustness, live monitoring, feature pipeline quality, phased rollouts, and operational rigor."
+      ]
+    },
+    {
+      "name": "Pinterest",
+      "position": "ML Engineer, Measurement Modeling",
+      "location": "Seattle, WA",
+      "startDate": "2020",
+      "endDate": "2022",
+      "summary": "Tech Lead for the conversion modeling team.",
+      "highlights": [
+        "Set technical vision, evaluation frameworks, and operational standards for the conversion modeling team.",
+        "Improved the Conversion User Match Prediction model, directly improving advertiser attribution.",
+        "Pioneered embedding-based candidate retrieval to future-proof attribution against browser privacy changes."
+      ]
+    },
+    {
+      "name": "Uber",
+      "position": "ML Engineer, Michelangelo Deep Learning / Uber AI",
+      "location": "Seattle, WA",
+      "startDate": "2018",
+      "endDate": "2020",
+      "summary": "Founding member of Uber's ML Application Framework.",
+      "highlights": [
+        "Enabled code/config-driven ML workflows across Keras and PyTorch as a founding member of Uber's ML Application Framework.",
+        "Major contributor to Horovod (Linux Foundation AI): authored the horovodrun CLI launcher, fault-tolerant training, tensor fusion, and Spark Estimator integration.",
+        "Built platform efficiency tools for GPU/CPU utilization monitoring, idle job detection, and hardware benchmarking."
+      ]
+    },
+    {
+      "name": "Capital One",
+      "position": "ML Engineer",
+      "location": "Washington, DC",
+      "startDate": "2017",
+      "endDate": "2018",
+      "summary": "Deep learning for data profiling and synthetic data.",
+      "highlights": [
+        "Built deep learning-powered data profiling and synthetic data generation libraries (GANs/RNNs); this work produced 110 granted US patents.",
+        "Developed Capital One's first-generation deep learning experimentation infrastructure."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "University of Illinois Urbana-Champaign",
+      "area": "Computer Science",
+      "studyType": "Ph.D.",
+      "endDate": "2019",
+      "summary": "Dissertation: Safety and security of cyber-physical systems."
+    },
+    {
+      "institution": "University of Tehran",
+      "area": "Electrical Engineering",
+      "studyType": "B.Sc.",
+      "summary": "Outstanding Student Award (Top 5%)."
+    }
+  ],
+  "awards": [
+    {
+      "title": "Qualcomm Innovation Fellowship — Winner",
+      "date": "2013",
+      "awarder": "Qualcomm",
+      "summary": "$100K fellowship; one of 8 winning teams selected from 138 proposals."
+    },
+    {
+      "title": "Qualcomm Innovation Fellowship — Finalist",
+      "date": "2016",
+      "awarder": "Qualcomm"
+    },
+    {
+      "title": "Outstanding Student Award (Top 5%)",
+      "awarder": "University of Tehran"
+    }
+  ],
+  "skills": [
+    {
+      "name": "Frontier model customization",
+      "keywords": ["Continued pre-training (CPT)", "Continual learning", "Fine-tuning", "LLM agents", "Relational & tabular data"]
+    },
+    {
+      "name": "Production ML systems",
+      "keywords": ["Distributed training (Horovod)", "ML platforms", "Risk & fraud modeling", "Synthetic data generation", "Model monitoring & rollout"]
+    }
+  ]
+}
