@@ -12,6 +12,13 @@ I am a principal scientist at Amazon AGI labs with over a decade of experience d
 
 I thrive at the intersection of technical depth and cross-functional leadership, driving measurable business outcomes while upholding engineering excellence. Over my career, I’ve delivered significant business impact, mentored engineering teams, and contributed to open source (Horovod, distributed training frameworks) and applied ML research (100+ US patents, peer-reviewed publications).
 
+## What I’m Exploring
+- How enterprises can truly make frontier models their own — continued pre-training on relational and structured data, where most enterprise knowledge actually lives.
+- Continual learning as a product primitive: models that keep acquiring new knowledge and capabilities without eroding what they already do well.
+- Closing the gap between frontier-model research and production reality, drawing on a decade of shipping ML systems in payments, ads, and infrastructure.
+
+If you want to talk, reach out — the fastest way is email: [fardin.abdi@gmail.com](mailto:fardin.abdi@gmail.com).
+
 ## Career Highlights
 ### Amazon – Principal Scientist, AGI Labs (2025–Present)
 - Leading work on model customization for frontier models, enabling customers to adapt foundation models to their domains.
@@ -20,7 +27,7 @@ I thrive at the intersection of technical depth and cross-functional leadership,
 
 ### Stripe – Staff ML Engineer, Risk (2022–2025)
 - Merchant Credit Risk Tech Lead; reduced high-risk merchant losses while minimizing false positives for legitimate businesses.
-- Architected DetectiveGPT, Stripe’s LLM agent framework for automated merchant investigations, saving $10M+/year and adopted across Sales, Compliance, Crypto, and Strategy teams.
+- Architected DetectiveGPT, Stripe’s LLM agent framework for automated merchant risk investigations, adopted across Sales, Compliance, Crypto, and Strategy teams.
 - Led delivery of ML models for delinquency, loss estimation, user value, and churn, generating $15M+/year in savings.
 - Drove infra robustness, live monitoring, feature pipeline quality, phased rollouts, and operational rigor.
 
@@ -46,6 +53,6 @@ Earlier roles include internships at Affirm (early engineering hire) and Apple.
 
 ## Selected Achievements
 - 100+ US patents & peer-reviewed publications in ML, distributed systems, and cyber-physical systems.
-- Winner, Qualcomm Innovation Fellowship (2014, $100K).
+- Winner, Qualcomm Innovation Fellowship (2013, $100K; one of 8 winning teams selected from 138 proposals).
 - Finalist, Qualcomm Innovation Fellowship (2016).
 - Outstanding Student Award, University of Tehran (Top 5%).
