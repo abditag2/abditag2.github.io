@@ -13,12 +13,12 @@ I am a principal scientist at Amazon AGI labs with over a decade of experience d
 I thrive at the intersection of technical depth and cross-functional leadership, driving measurable business outcomes while upholding engineering excellence. Over my career, I’ve delivered significant business impact, mentored engineering teams, and contributed to open source (Horovod, distributed training frameworks) and applied ML research (100+ US patents, peer-reviewed publications).
 
 ## Career Highlights
-### Amazon – Principal Scientist, AGI Labs (2024–Present)
+### Amazon – Principal Scientist, AGI Labs (2025–Present)
 - Leading work on model customization for frontier models, enabling customers to adapt foundation models to their domains.
 - Focused on continued pre-training (CPT) with relational datasets, developing methods to effectively learn from structured and tabular data.
 - Researching continual learning techniques that allow models to acquire new knowledge and capabilities without catastrophic forgetting.
 
-### Stripe – Staff ML Engineer, Risk (2022–2024)
+### Stripe – Staff ML Engineer, Risk (2022–2025)
 - Merchant Credit Risk Tech Lead; reduced high-risk merchant losses while minimizing false positives for legitimate businesses.
 - Architected DetectiveGPT, Stripe’s LLM agent framework for automated merchant investigations, saving $10M+/year and adopted across Sales, Compliance, Crypto, and Strategy teams.
 - Led delivery of ML models for delinquency, loss estimation, user value, and churn, generating $15M+/year in savings.
