@@ -4,7 +4,7 @@ sys.path.insert(0, str(ROOT))
 from trader import config
 from trader.data.store import BarStore, CoinbaseFeed
 from trader.ledger import Ledger
-from trader.strategy import PortfolioStrategy
+from trader.strategies import load_strategy, available
 from trader.engine import Engine
 from trader.execution.paper import PaperExecutor
 from trader import metrics

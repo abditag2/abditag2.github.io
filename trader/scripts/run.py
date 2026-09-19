@@ -28,7 +28,7 @@ else:
         ex.verify_tokens(); print(f"wallet {ex.address}: native {ex.native_balance():.4f}, balances {ex.balances()}")
 if not ledger.con.execute("SELECT 1 FROM runs WHERE run_id=?", (a.run_id,)).fetchone():
     ledger.new_run(a.run_id, a.mode + ("-dry" if a.dry_run else ""), a.strategy, cfg, symbols)
-eng = Engine(PortfolioStrategy(cfg), ex, ledger, a.run_id, symbols, cash_yield=cash_yield); eng.load_state()
+eng = Engine(load_strategy(cfg), ex, ledger, a.run_id, symbols, cash_yield=cash_yield); eng.load_state()
 print(f"{a.mode} run {a.run_id}: {len(symbols)} symbols, strategy {a.strategy}, resumed {len(eng.state.lots)} lots")
 
 def one_step():

@@ -3,12 +3,12 @@ paper/live = one step per completed hour with fresh candles. Same decide -> net 
 import time, datetime as dt, json
 import numpy as np, pandas as pd
 from . import signals as S
-from .strategy import PortfolioStrategy, State, Lot, Order
+from .strategies.base import Strategy, State, Lot, Order, Context
 from .execution.base import ExecutionError
 from . import risk
 
 class Engine:
-    def __init__(self, strategy: PortfolioStrategy, executor, ledger, run_id, symbols, cash_yield=0.0, log=print):
+    def __init__(self, strategy: Strategy, executor, ledger, run_id, symbols, cash_yield=0.0, log=print):
         self.strategy, self.ex, self.ledger, self.run_id, self.symbols = strategy, executor, ledger, run_id, list(symbols)
         self.cash_yield = cash_yield; self.log = log; self.state = State(); self.halted = None
 
@@ -32,12 +32,9 @@ class Engine:
         prices = {s: p for s, p in prices.items() if p == p and p > 0}
         avail = {s: bool(avail.get(s, False)) and s in prices for s in avail}
         equity, cash, exposure = self.equity(prices)
-        orders = []
-        if self.halted is None:
-            orders = self.strategy.decide(ts, i, sig, prices, avail, self.state, equity, cash, self.ex.can_short, hour)
-        else:   # halted: only exits
-            orders = [o for o in self.strategy.decide(ts, i, sig, prices, avail, self.state, equity, cash, self.ex.can_short, hour)
-                      if o.book == "overlay" and o.reason == "time exit"]
+        ctx = Context(ts, i, sig, prices, avail, self.state, equity, cash, self.ex.can_short, hour, self.strategy.min_notional)
+        self.strategy.decide(ctx)
+        orders = ctx.orders if self.halted is None else [o for o in ctx.orders if o.book == "overlay" and o.symbol in self.state.lots]   # halted: exits only
         self._execute(ts, orders, prices)
         equity, cash, exposure = self.equity(prices)
         self.ledger.record_equity(self.run_id, ts, equity, cash, exposure / equity if equity > 0 else 0.0)
@@ -81,10 +78,11 @@ class Engine:
             self.ledger.set_base(self.run_id, s, self.state.base_qty.get(s, 0.0))
 
     # ---- backtest ----
-    def backtest(self, store, start, end, warmup_days=100):
+    def backtest(self, store, start, end, warmup_days=None):
         start = pd.Timestamp(start, tz="UTC"); end = pd.Timestamp(end, tz="UTC")
-        panel = store.panel(self.symbols, (start - pd.Timedelta(days=warmup_days)).timestamp(), end.timestamp())
-        sig = S.compute(panel); close = panel["close"]; avail = panel["avail"]; idx = close.index
+        warm = pd.Timedelta(hours=self.strategy.warmup_hours) if warmup_days is None else pd.Timedelta(days=warmup_days)
+        panel = store.panel(self.symbols, (start - warm).timestamp(), end.timestamp())
+        sig = self.strategy.signals(panel); close = panel["close"]; avail = panel["avail"]; idx = close.index
         i0 = int(idx.searchsorted(start)); n = len(idx); t0 = time.time()
         for i in range(i0, n):
             t = idx[i]; prices = {s: float(close.iat[i, j]) for j, s in enumerate(close.columns)}
@@ -95,12 +93,13 @@ class Engine:
         return self.ledger.equity_series(self.run_id)
 
     # ---- paper / live ----
-    def live_step(self, store, feed, now=None, history_days=100, max_lag_hours=2, daily_loss_limit=0.05, drawdown_limit=0.30):
+    def live_step(self, store, feed, now=None, history_days=None, max_lag_hours=2, daily_loss_limit=0.05, drawdown_limit=0.30):
         now = now or dt.datetime.now(dt.timezone.utc)
         feed.update(store, self.symbols, now=now)
-        panel = store.panel(self.symbols, (now - dt.timedelta(days=history_days)).timestamp(), now.timestamp())
+        hist = dt.timedelta(hours=self.strategy.warmup_hours + 48) if history_days is None else dt.timedelta(days=history_days)
+        panel = store.panel(self.symbols, (now - hist).timestamp(), now.timestamp())
         risk.check_data_fresh(panel, now, max_lag_hours)
-        sig = S.compute(panel); close = panel["close"]; i = len(close) - 1; t = close.index[i]
+        sig = self.strategy.signals(panel); close = panel["close"]; i = len(close) - 1; t = close.index[i]
         done = self.ledger.con.execute("SELECT 1 FROM equity WHERE run_id=? AND ts=?", (self.run_id, int(t.timestamp()))).fetchone()
         if done:
             self.log(f"bar {t} already processed"); return None

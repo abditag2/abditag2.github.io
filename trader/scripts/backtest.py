@@ -18,7 +18,7 @@ ledger.con.execute("DELETE FROM equity WHERE run_id=?", (run_id,)); ledger.con.e
 ledger.con.execute("DELETE FROM lots WHERE run_id=?", (run_id,)); ledger.con.execute("DELETE FROM base WHERE run_id=?", (run_id,)); ledger.commit()
 ledger.new_run(run_id, "backtest", a.strategy, {**cfg, "fee": a.fee, "slippage": a.slippage, "cash_yield": cash_yield, "no_short": a.no_short}, symbols)
 ex = PaperExecutor(cash=a.cash, fee_rate=a.fee, slippage=a.slippage, can_short=not a.no_short)
-eng = Engine(PortfolioStrategy(cfg), ex, ledger, run_id, symbols, cash_yield=cash_yield)
+eng = Engine(load_strategy(cfg), ex, ledger, run_id, symbols, cash_yield=cash_yield)
 eq = eng.backtest(store, a.start, a.end)
 m = metrics.summarize(eq["equity"], ledger.lots(run_id), eq["exposure"])
 print(f"run {run_id}:"); print_metrics(m)

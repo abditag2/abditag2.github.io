@@ -13,15 +13,27 @@ _defaults:
   cash_yield: 0.04           # paper/backtest only: APY accrued on idle cash
 
 p1:                          # the mixed portfolio from the 30%-return study (long/short base needs a venue with shorts)
-  {}
+  class: portfolio
 
 p1_longflat:                 # spot-only version: base clipped at zero by the executor when it cannot short
-  {}
+  class: portfolio
 
 bstar_long:                  # 24h dip overlay alone, long-only, 10 slots of 10%
+  class: portfolio
   base_enabled: false
   overlay_slots: 10
 
 r3:                          # trend ensemble alone, 40% vol target
+  class: portfolio
   overlay_enabled: false
   base_vol_target: 0.40
+
+sma_cross:                   # example plugin (trader/strategies/examples.py): long/flat above a 30-day moving average
+  class: sma_cross
+  sma_hours: 720
+
+xs_momentum:                 # example plugin: weekly cross-sectional momentum, top 3 long / bottom 3 short
+  class: xs_momentum
+  lookback_days: 28
+  n: 3
+  gross_exposure: 0.6

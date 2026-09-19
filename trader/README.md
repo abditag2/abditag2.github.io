@@ -46,6 +46,55 @@ Strategies (`config/strategies.yaml`): `p1` the mixed portfolio from the 30%-ret
 20 overlay slots of 5%, 4% yield on idle cash in simulation), `p1_longflat` the same for venues without shorts,
 `bstar_long` the 24h dip overlay alone, `r3` the trend ensemble alone.
 
+## Writing a new strategy
+
+Strategies are plugins. A strategy is a class with `signals(panel)` (vectorized precomputation over the whole hourly panel, run once per
+backtest or per live step) and `decide(ctx)` (called every completed hour). It expresses intent through the `Context`:
+
+```python
+# trader/strategies/custom/my_strategy.py   (this folder is discovered automatically)
+from trader.strategies import register
+from trader.strategies.base import Strategy
+
+@register("breakout_20d")
+class Breakout(Strategy):
+    warmup_hours = 24 * 30                                   # history needed before the first decision
+
+    def signals(self, panel):                                # any dict of DataFrames indexed like panel["close"]
+        return {"high20": panel["high"].rolling(24 * 20).max().shift(1), "close": panel["close"]}
+
+    def decide(self, ctx):
+        # ctx.symbols()            coins with a price this hour       ctx.value("high20", s)   this hour's signal value
+        # ctx.equity, ctx.cash     account                            ctx.hour, ctx.ts         time (UTC hour, unix seconds)
+        # ctx.can_short            venue capability                   ctx.deployed()           |positions| in quote units
+        for s in ctx.symbols():
+            if not ctx.has_lot(s) and ctx.value("close", s) > ctx.value("high20", s):
+                ctx.open_lot(s, ctx.equity * 0.05, side=1, reason="20d breakout")     # discrete trade, one lot per coin
+            elif ctx.has_lot(s) and ctx.lot_age_hours(s) >= 48:
+                ctx.close_lot(s, "time exit")
+        # or manage a target-weight book instead:  ctx.target_base(s, signed_notional, "rebalance")
+```
+
+Reference it from `config/strategies.yaml` and every script, the engine and the dashboard pick it up:
+
+```yaml
+breakout_20d:
+  class: breakout_20d
+  min_trade_notional: 10
+```
+
+```bash
+python scripts/backtest.py --strategy breakout_20d --universe research22 --start 2023-01-01 --end 2026-09-19
+python scripts/run.py --mode paper --strategy breakout_20d --universe research22 --run-id breakout_paper
+```
+
+Two books are available and can be mixed: `target_base` keeps a signed target position per coin (rebalancing strategies), `open_lot`/`close_lot`
+run discrete trades with an entry time (event strategies). Both respect `min_trade_notional`, the cash on hand, the exposure cap and whether the venue can
+short. `trader/strategies/sleeves.py` holds the validated pieces (`TrendBase`, `DipOverlay`) so a new strategy can compose them, as
+`trader/strategies/portfolio.py` does. `trader/strategies/examples.py` has two complete small plugins (`sma_cross`, `xs_momentum`). Orders for the
+same coin in the same hour are netted into one trade by the engine, and fills are reconciled against holdings, so a strategy never has to think
+about execution. Tests in `tests/test_plugins.py` show how to run a plugin through the engine in a few lines.
+
 ## Engine validation against the research
 
 Same rules, same costs (0.05% fee + 0.025% slippage per side, 4% yield on idle cash), 22 coins, 2018-01-01 to 2026-09-19:
