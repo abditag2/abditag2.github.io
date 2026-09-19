@@ -101,6 +101,47 @@ at 0.60% (v2 0.30% pools), so use an L2, 0.05% v3 pools, small clips, and tight 
 Native-chain coins (SOL, ADA, DOGE, DOT, LTC, ATOM, XRP) are not tradeable on an EVM DEX; the full
 long/short version needs a perp venue.
 
+
+## Portfolio study: 30% a year at low risk?
+
+Bar set before testing: CAGR >= 30%, max drawdown >= -25%, Sharpe >= 1.5, worst month >= -10%,
+at least 8 of 9 years positive, no leverage. Simulator: `portfolio.py` (compounding cash accounting,
+total exposure capped at 100%, 0.15% round trip, 2018-01-01 to 2026-09-19).
+
+Best construction found (`P1`): R3 trend ensemble long/short with a 30% per-coin vol target as the
+base, B* long-only 24h dip overlay with 20 slots of 5% of equity, idle cash earning 4% a year.
+
+| panel | CAGR | max DD | Sharpe | worst month | years positive | 2026 YTD |
+|---|---|---|---|---|---|---|
+| 22 selection coins | 30.7% | -22% | 1.36 | -7.6% | 9 of 9 | +2% |
+| 38 coins (22 + 16 fresh) | 31.4% | -25% | 1.25 | -9.4% | 8 of 9 | -1% |
+| 16 fresh coins only (ZRX, BAT, ZEC, EOS, DASH, OMG, KNC, COMP, MKR, SNX, YFI, GRT, CRV, MANA, SAND, AXS) | 20.9% | -20% | 1.06 | -11.9% | 8 of 9 | +2% |
+| 22 coins, no yield on cash | 26.9% | -23% | 1.22 | -7.8% | 8 of 9 | 0% |
+
+Verdict: four of the five criteria are met on the selection and blended universes; Sharpe reaches
+1.25 to 1.47, not 1.5. On coins never used in any selection the same rules make about 21% a year at a
+20% drawdown. Buy and hold on that basket: 10% a year at a 54% drawdown.
+
+Robustness on 22 coins (`results/final_check.out`): costs 0.06 / 0.15 / 0.30% give CAGR 33.7 / 30.7 /
+25.6%; execution delay 0 / 1 / 2 h gives 30.7 / 30.2 / 30.4%; the grid of trend vol target 25-35% by
+15-25 dip slots gives 27-34% CAGR, -19% to -26% max DD, every cell 8 or 9 years positive. The
+lowest-risk cell (vt 25%, 25 slots) makes 27.1% at -19% DD, worst month -6.5%, Sharpe 1.43, 9 of 9
+(16 fresh coins: 18.0% at -17%).
+
+What did not help (`results/portfolio22.out`, `portfolio38.out`): per-trade stops at 2 sigma and
+vol-scaled slot sizes cut returns more than risk; portfolio-level vol targeting cut returns with
+little drawdown benefit; the long/short dip overlay adds return but its shorts drive the 2026
+losses (-32% YTD on 38 coins) and the deep drawdowns, so the overlay is long-only; capping new
+entries per day removes most of the profit because the profitable dips cluster on the same days.
+
+Where the drawdowns come from: the trend sleeve's whipsaw from Aug to Nov 2024 (about -23%) sets the
+max drawdown of every mixed configuration; the dip overlay's worst single day was 2021-02-22 when
+ten slots were fully deployed into a market-wide crash.
+
+Caveats: the 30% figures are on the universe the components were selected on and include a 4%
+yield assumption; the out-of-sample return is about two thirds of that. Costs, funding for the
+short trend positions, and slippage on cluster days are modeled only as the flat round-trip cost.
+
 ## Caveats
 
 * Survivorship: the selection universe is ten coins that are major today; the holdout basket is
@@ -124,3 +165,5 @@ long/short version needs a perp venue.
     python3 round4.py      # holding-period sweep and dip-in-trend grid
     python3 round5.py      # 12 holdout coins
     python3 final_stats.py # compounded statistics for R3
+    python3 sizing.py; python3 stacking.py           # capital deployment study
+    MSET=1 python3 portfolio.py <comma-separated coins>  # portfolio study; python3 final_check.py; python3 final_check16.py

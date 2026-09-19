@@ -1,0 +1,16 @@
+panel: 38 coins, 2016-12-20 .. 2026-09-19
+PASS bar: CAGR>=30%, maxDD>=-25%, Sharpe>=1.5, worst month>=-10%, years+>=8/9, no leverage
+
+     B* K=10 only, no yield                             CAGR  19.6%  maxDD  -42%  Sharpe 0.72  worst mo  -16.9%  yrs+ 7/9  deployed  19%  2026ytd -33%  DD 2024-03-15..2024-11-13  | 18:+20 19:+21 20:+31 21:+112 22:-2 23:+25 24:+14 25:+26 26:-33
+     B* K=10 + yield 4%                                 CAGR  23.5%  maxDD  -41%  Sharpe 0.82  worst mo  -16.7%  yrs+ 8/9  deployed  19%  2026ytd -32%  DD 2024-03-15..2024-11-13  | 18:+25 19:+25 20:+35 21:+119 22:+1 23:+29 24:+18 25:+30 26:-32
+     B* K=10 vol-scaled + stop 2σ + yield               CAGR  15.1%  maxDD  -41%  Sharpe 0.69  worst mo  -16.6%  yrs+ 8/9  deployed  17%  2026ytd -35%  DD 2025-04-10..2026-09-19  | 18:+20 19:+14 20:+27 21:+64 22:+5 23:+19 24:+19 25:+22 26:-35
+     R3 only + yield                                    CAGR  19.5%  maxDD  -23%  Sharpe 0.94  worst mo   -7.3%  yrs+ 8/9  deployed  27%  2026ytd +5%  DD 2024-08-05..2024-11-06  | 18:+26 19:+36 20:+17 21:+33 22:+19 23:+19 24:+26 25:-5 26:+5
+     Stacked: R3 + B* K=10 + yield                      CAGR  34.8%  maxDD  -43%  Sharpe 0.97  worst mo  -14.6%  yrs+ 7/9  deployed  43%  2026ytd -29%  DD 2022-06-18..2022-11-10  | 18:+50 19:+64 20:+53 21:+149 22:-1 23:+32 24:+29 25:+20 26:-29
+     Stacked, slots vol-scaled                          CAGR  30.2%  maxDD  -42%  Sharpe 0.93  worst mo  -14.6%  yrs+ 8/9  deployed  42%  2026ytd -30%  DD 2024-03-15..2024-11-07  | 18:+45 19:+51 20:+47 21:+105 22:+7 23:+24 24:+38 25:+17 26:-30
+     Stacked, vol-scaled, stop -2σ24                    CAGR  28.9%  maxDD  -42%  Sharpe 0.90  worst mo  -16.6%  yrs+ 8/9  deployed  41%  2026ytd -26%  DD 2024-03-15..2024-11-07  | 18:+45 19:+47 20:+40 21:+92 22:+5 23:+23 24:+36 25:+21 26:-26
+     Stacked, vol-scaled, stop, port vol 25%            CAGR  25.4%  maxDD  -39%  Sharpe 0.90  worst mo  -14.6%  yrs+ 8/9  deployed  36%  2026ytd -24%  DD 2024-04-13..2024-11-07  | 18:+40 19:+44 20:+41 21:+88 22:+11 23:+18 24:+16 25:+17 26:-24
+     Stacked, vol-scaled, stop, port vol 20%            CAGR  24.1%  maxDD  -37%  Sharpe 0.91  worst mo  -12.7%  yrs+ 8/9  deployed  34%  2026ytd -22%  DD 2024-04-13..2024-11-07  | 18:+36 19:+38 20:+38 21:+83 22:+15 23:+19 24:+13 25:+16 26:-22
+     Stacked, vol-scaled, stop, port vol 15%            CAGR  20.9%  maxDD  -36%  Sharpe 0.88  worst mo  -10.9%  yrs+ 8/9  deployed  30%  2026ytd -20%  DD 2024-04-13..2024-11-07  | 18:+30 19:+31 20:+33 21:+73 22:+16 23:+18 24:+5 25:+15 26:-20
+     Stacked K=15, vol-scaled, stop, port vol 20%       CAGR  24.1%  maxDD  -37%  Sharpe 0.95  worst mo  -11.5%  yrs+ 8/9  deployed  32%  2026ytd -14%  DD 2024-07-05..2024-11-07  | 18:+31 19:+39 20:+30 21:+65 22:+27 23:+22 24:+11 25:+12 26:-14
+     Long-only stacked, vol-scaled, stop                CAGR  34.3%  maxDD  -30%  Sharpe 1.15  worst mo  -14.3%  yrs+ 7/9  deployed  34%  2026ytd -5%  DD 2024-08-05..2024-11-06  | 18:+27 19:+50 20:+47 21:+90 22:-1 23:+44 24:+73 25:+4 26:-5
+     Long-only stacked, vol-scaled, stop, port vol 20%  CAGR  31.2%  maxDD  -28%  Sharpe 1.22  worst mo  -12.3%  yrs+ 8/9  deployed  30%  2026ytd -5%  DD 2024-08-05..2024-11-06  | 18:+24 19:+46 20:+53 21:+73 22:+5 23:+38 24:+52 25:+6 26:-5
