@@ -1,0 +1,45 @@
+
+== 10 original coins, long/short, 0.15% cost, 2018-2026 ==
+1 slice per coin (K=10, as tested)           CAGR   12.3%  maxDD   -27%  Sharpe  0.83  worst month   -7.5%  avg deployed    7%  years+ 8/9
+K=10 slots of equity/10                      CAGR   12.3%  maxDD   -27%  Sharpe  0.83  worst month   -7.5%  avg deployed    7%  years+ 8/9
+K=5 slots of equity/5                        CAGR   19.2%  maxDD   -41%  Sharpe  0.80  worst month  -14.6%  avg deployed   12%  years+ 7/9
+K=3 slots of equity/3                        CAGR   18.5%  maxDD   -46%  Sharpe  0.66  worst month  -21.7%  avg deployed   17%  years+ 7/9
+K=2 slots of equity/2                        CAGR    6.9%  maxDD   -71%  Sharpe  0.37  worst month  -21.9%  avg deployed   20%  years+ 3/9
+K=1: all cash into the first signal          CAGR    3.6%  maxDD   -69%  Sharpe  0.34  worst month  -35.6%  avg deployed   26%  years+ 4/9
+1 slice per coin + 4%/yr yield on idle cash  CAGR   16.5%  maxDD   -25%  Sharpe  1.07  worst month   -7.2%  avg deployed    7%  years+ 8/9
+
+== 10 original coins, long-only, 0.15% cost, 2018-2026 ==
+1 slice per coin (K=10, as tested)           CAGR   11.0%  maxDD   -12%  Sharpe  1.05  worst month   -7.9%  avg deployed    3%  years+ 7/9
+K=10 slots of equity/10                      CAGR   11.0%  maxDD   -12%  Sharpe  1.05  worst month   -7.9%  avg deployed    3%  years+ 7/9
+K=5 slots of equity/5                        CAGR   15.7%  maxDD   -24%  Sharpe  0.87  worst month  -15.4%  avg deployed    6%  years+ 7/9
+K=3 slots of equity/3                        CAGR   15.7%  maxDD   -36%  Sharpe  0.70  worst month  -23.0%  avg deployed    8%  years+ 7/9
+K=2 slots of equity/2                        CAGR   10.5%  maxDD   -43%  Sharpe  0.48  worst month  -22.4%  avg deployed   10%  years+ 5/9
+K=1: all cash into the first signal          CAGR    5.3%  maxDD   -64%  Sharpe  0.34  worst month  -35.2%  avg deployed   13%  years+ 3/9
+1 slice per coin + 4%/yr yield on idle cash  CAGR   15.2%  maxDD   -12%  Sharpe  1.41  worst month   -7.6%  avg deployed    3%  years+ 9/9
+
+== 22 coins (original + holdout), long/short, 0.15% cost, 2018-2026 ==
+1 slice per coin (K=22, as tested)           CAGR   11.8%  maxDD   -25%  Sharpe  0.87  worst month   -6.5%  avg deployed    7%  years+ 8/9
+K=10 slots of equity/10                      CAGR   20.2%  maxDD   -39%  Sharpe  0.85  worst month  -13.1%  avg deployed   13%  years+ 8/9
+K=5 slots of equity/5                        CAGR   19.7%  maxDD   -44%  Sharpe  0.69  worst month  -17.6%  avg deployed   20%  years+ 8/9
+K=3 slots of equity/3                        CAGR   13.5%  maxDD   -59%  Sharpe  0.51  worst month  -20.5%  avg deployed   26%  years+ 7/9
+K=2 slots of equity/2                        CAGR   10.1%  maxDD   -71%  Sharpe  0.44  worst month  -27.9%  avg deployed   30%  years+ 6/9
+K=1: all cash into the first signal          CAGR   18.8%  maxDD   -71%  Sharpe  0.59  worst month  -44.8%  avg deployed   37%  years+ 6/9
+1 slice per coin + 4%/yr yield on idle cash  CAGR   15.9%  maxDD   -24%  Sharpe  1.14  worst month   -6.2%  avg deployed    7%  years+ 8/9
+
+== 22 coins (original + holdout), long-only, 0.15% cost, 2018-2026 ==
+1 slice per coin (K=22, as tested)           CAGR   11.9%  maxDD   -13%  Sharpe  1.22  worst month   -5.8%  avg deployed    3%  years+ 8/9
+K=10 slots of equity/10                      CAGR   18.8%  maxDD   -24%  Sharpe  1.01  worst month  -12.6%  avg deployed    6%  years+ 7/9
+K=5 slots of equity/5                        CAGR   17.0%  maxDD   -35%  Sharpe  0.74  worst month  -19.8%  avg deployed   10%  years+ 7/9
+K=3 slots of equity/3                        CAGR   13.3%  maxDD   -54%  Sharpe  0.55  worst month  -21.5%  avg deployed   13%  years+ 6/9
+K=2 slots of equity/2                        CAGR   13.1%  maxDD   -64%  Sharpe  0.51  worst month  -22.8%  avg deployed   15%  years+ 6/9
+K=1: all cash into the first signal          CAGR    5.7%  maxDD   -79%  Sharpe  0.37  worst month  -35.2%  avg deployed   20%  years+ 4/9
+1 slice per coin + 4%/yr yield on idle cash  CAGR   16.2%  maxDD   -13%  Sharpe  1.62  worst month   -5.5%  avg deployed    3%  years+ 9/9
+22 coins, 0.15% cost, 2018-2026, compounded daily
+B* alone, K=10 slots (long/short)                    CAGR  20.2%  maxDD  -36%  Sharpe 0.85  worst month  -13.1%  years+ 8/9  avg deployed  13%  99th pct  88%
+R3 trend ensemble alone (long/short)                 CAGR  19.6%  maxDD  -21%  Sharpe 0.92  worst month   -7.7%  years+ 8/9  avg deployed  29%  99th pct  65%
+STACKED: R3 base + B* overlay (long/short)           CAGR  40.9%  maxDD  -47%  Sharpe 1.07  worst month  -15.0%  years+ 8/9  avg deployed  42%  99th pct 128%
+STACKED + 4%/yr yield on idle cash (long/short)      CAGR  44.3%  maxDD  -46%  Sharpe 1.14  worst month  -14.9%  years+ 8/9  avg deployed  42%  99th pct 128%
+B* alone, K=10 slots (long-only)                     CAGR  18.8%  maxDD  -17%  Sharpe 1.01  worst month  -12.6%  years+ 7/9  avg deployed   6%  99th pct  82%
+R3 trend ensemble alone (long-only)                  CAGR  17.8%  maxDD  -20%  Sharpe 1.22  worst month   -4.5%  years+ 5/9  avg deployed  12%  99th pct  56%
+STACKED: R3 base + B* overlay (long-only)            CAGR  38.4%  maxDD  -31%  Sharpe 1.31  worst month  -16.3%  years+ 6/9  avg deployed  19%  99th pct 114%
+STACKED + 4%/yr yield on idle cash (long-only)       CAGR  43.0%  maxDD  -28%  Sharpe 1.42  worst month  -16.1%  years+ 6/9  avg deployed  19%  99th pct 114%
