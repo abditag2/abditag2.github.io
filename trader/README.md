@@ -12,6 +12,8 @@ The strategy object never knows which mode it is in. It receives signals, prices
 The engine nets orders per coin, executes through whichever executor is plugged in, books fills into a SQLite ledger, and marks equity every hour.
 The dashboard reads those ledgers.
 
+![dashboard](docs/dashboard.png)
+
 ```
 trader/
   trader/data/store.py        SQLite bar store + Coinbase candle feed (incremental update)
