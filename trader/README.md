@@ -104,8 +104,13 @@ Same rules, same costs (0.05% fee + 0.025% slippage per side, 4% yield on idle c
 | engine `p1` long/short (`scripts/backtest.py`) | 34.4% | -21% (2024-08-05..2024-11-06) | 1.46 | -7.4% | 9/9 | 26% | 2186 | 56% |
 | research `portfolio.py` M9 (same spec) | 30.7% | -22% (2024-08-05..2024-11-06) | 1.36 | -7.6% | 9/9 | 25% | - | 54% |
 
-The engine nets the base and overlay orders of a coin into one trade per hour, which saves cost; everything else matches.
-Further rows (long/flat, overlay only, trend only, the Arbitrum universe) are in `state/bt*.log` after running the commands in `deploy/validate.sh`.
+| engine `p1` `--no-short` (spot venue: base long/flat) | 31.2% | -19% | 1.58 | -9.1% | 6/9 | 13% | 2187 | 56% |
+| engine `bstar_long` (overlay only, 10 slots of 10%) | 22.8% | -24% | 1.18 | -12.5% | 7/9 | 6% | 2048 | 56% |
+| engine `r3` (trend only, 40% vol target) | 26.6% | -23% | 1.13 | -7.4% | 8/9 | 30% | - | - |
+| engine `p1` `--no-short` on the 5-token Arbitrum universe | 24.6% | -15% | 1.46 | -6.9% | 7/9 | 14% | 574 | 55% |
+
+The engine nets the base and overlay orders of a coin into one trade per hour, which saves cost, so it runs a few points above the research
+simulator; the yearly pattern and the drawdown windows match. `deploy/validate.sh` reproduces every row (each replay takes about three minutes).
 
 ## Live mode: plugging in a wallet
 
