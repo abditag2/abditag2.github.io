@@ -1,0 +1,24 @@
+Sensitivity of B* (ensemble trend, 24h dip, 24h hold) on the original 10 coins, 2018-2026
+
+-- dip threshold k --
+k=1.0 hold 24h                                 hold    26h | yrs+ 7/9 | CAGR +18.9% | maxDD  -31% | Sharpe taker +0.76 maker +0.97 1h-delay +0.67 | coins+ 10/10 | 18:+14 19:+14 20:+14 21:+88 22:+18 23:+17 24:-4 25:+33 26:-7
+k=1.25 hold 24h                                hold    25h | yrs+ 8/9 | CAGR +25.6% | maxDD  -22% | Sharpe taker +1.07 maker +1.24 1h-delay +0.98 | coins+ 10/10 | 18:+52 19:+8 20:+11 21:+77 22:+34 23:+26 24:+4 25:+35 26:-5
+k=1.5 hold 24h                                 hold    24h | yrs+ 8/9 | CAGR +20.2% | maxDD  -24% | Sharpe taker +0.99 maker +1.13 1h-delay +0.98 | coins+ 10/10 | 18:+62 19:+8 20:+8 21:+54 22:+20 23:+24 24:+2 25:+20 26:-6
+k=2.0 hold 24h                                 hold    24h | yrs+ 8/9 | CAGR +19.4% | maxDD  -15% | Sharpe taker +1.36 maker +1.46 1h-delay +1.23 | coins+ 10/10 | 18:+55 19:+11 20:+23 21:+43 22:+7 23:+15 24:+14 25:+13 26:-3
+k=2.5 hold 24h                                 hold    24h | yrs+ 9/9 | CAGR  +9.4% | maxDD  -11% | Sharpe taker +0.95 maker +1.01 1h-delay +0.91 | coins+ 9/10 | 18:+17 19:+7 20:+15 21:+3 22:+8 23:+5 24:+13 25:+13 26:+1
+
+-- execution delay (position applied N hours after the signal), taker cost --
+  delay 0h: CAGR +20.2%  Sharpe +0.99  yrs+ 8/9  18:+62 19:+8 20:+8 21:+54 22:+20 23:+24 24:+2 25:+20 26:-6
+  delay 1h: CAGR +19.5%  Sharpe +0.98  yrs+ 8/9  18:+64 19:+15 20:+0 21:+48 22:+21 23:+24 24:+3 25:+15 26:-6
+  delay 2h: CAGR +21.8%  Sharpe +1.08  yrs+ 7/9  18:+73 19:+26 20:-3 21:+59 22:+15 23:+25 24:+2 25:+17 26:-4
+  delay 4h: CAGR +15.0%  Sharpe +0.80  yrs+ 8/9  18:+51 19:+17 20:-8 21:+49 22:+7 23:+14 24:+2 25:+12 26:+1
+
+-- cost per round trip --
+  maker 0.06%   CAGR +23.8%  Sharpe +1.13  yrs+ 8/9
+  taker 0.15%   CAGR +20.2%  Sharpe +0.99  yrs+ 8/9
+  spot 0.30%    CAGR +14.6%  Sharpe +0.76  yrs+ 7/9
+  retail 0.60%  CAGR +4.0%  Sharpe +0.29  yrs+ 5/9
+
+-- trade statistics (taker) --
+  trades per coin per year, median 32 (min 31, max 37); long share 49%
+  2276 trades: mean net +0.569%, median +0.441%, hit rate 54%, worst -36.1%, best +55.1%, t=4.9

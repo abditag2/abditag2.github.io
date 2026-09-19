@@ -1,0 +1,12 @@
+holdout coins (first bar): {'BCH-USD': '2017-12-20', 'ETC-USD': '2018-08-08', 'XLM-USD': '2019-03-14', 'XTZ-USD': '2019-08-06', 'ALGO-USD': '2019-08-15', 'UNI-USD': '2020-09-17', 'FIL-USD': '2020-12-09', 'AAVE-USD': '2020-12-15', 'XRP-USD': '2019-02-26', 'ICP-USD': '2021-05-10', 'NEAR-USD': '2022-09-01', 'APT-USD': '2022-10-19'}
+
+COIN-LEVEL OUT-OF-SAMPLE: fixed specs from round 4 on 12 coins never used in selection (per-year at taker 0.15%)
+B* ens-trend, 24h dip, hold 24h                hold    25h | yrs+ 8/9 | CAGR +23.2% | maxDD  -24% | Sharpe taker +1.13 maker +1.27 1h-delay +1.06 | coins+ 10/10 | 18:+40 19:+39 20:+30 21:+46 22:+24 23:+14 24:+24 25:+13 26:-15
+B* ens-trend, 24h dip, hold 12h                hold    14h | yrs+ 8/9 | CAGR +16.6% | maxDD  -22% | Sharpe taker +1.03 maker +1.22 1h-delay +0.99 | coins+ 10/10 | 18:+28 19:+20 20:+18 21:+34 22:+19 23:+7 24:+16 25:+15 26:-7
+B* k=2.0, hold 24h                             hold    24h | yrs+ 8/9 | CAGR +13.4% | maxDD  -22% | Sharpe taker +0.96 maker +1.06 1h-delay +0.74 | coins+ 11/10 | 18:+8 19:+6 20:+15 21:+34 22:+21 23:+18 24:+28 25:+5 26:-12
+B* long-only (spot AMM executable)             hold    25h | yrs+ 8/9 | CAGR +19.9% | maxDD  -15% | Sharpe taker +1.34 maker +1.43 1h-delay +1.46 | coins+ 12/10 | 18:+9 19:+22 20:+24 21:+59 22:+8 23:+18 24:+43 25:+4 26:-3
+B* k=2.0 long-only                             hold    24h | yrs+ 7/9 | CAGR +11.2% | maxDD  -12% | Sharpe taker +1.17 maker +1.24 1h-delay +0.99 | coins+ 11/10 | 18:+3 19:-2 20:+7 21:+39 22:+9 23:+15 24:+37 25:+3 26:-5
+R2 30d-trend, 24h dip, hold 24h                hold    25h | yrs+ 7/9 | CAGR  +7.0% | maxDD  -41% | Sharpe taker +0.39 maker +0.54 1h-delay +0.26 | coins+ 7/10 | 18:-28 19:+9 20:+20 21:+55 22:+5 23:+13 24:+27 25:+8 26:-23
+R3 trend ensemble daily                        hold   176h | yrs+ 7/9 | CAGR +17.6% | maxDD  -22% | Sharpe taker +0.84 maker +0.91 1h-delay +0.78 | coins+ 12/10 | 18:+37 19:+22 20:+13 21:+41 22:+27 23:+15 24:+21 25:-10 26:-2
+A2-4h {3,5,10,14}d every 4h                    hold    44h | yrs+ 7/9 | CAGR +23.1% | maxDD  -34% | Sharpe taker +0.96 maker +1.20 1h-delay +0.95 | coins+ 11/10 | 18:+111 19:+33 20:+37 21:+15 22:+22 23:+13 24:+34 25:-20 26:-6
+buy&hold                                       hold  7206h | yrs+ 4/9 | CAGR -15.4% | maxDD  -96% | Sharpe taker +0.28 maker +0.28 1h-delay +0.30 | coins+ 9/10 | 18:-91 19:-23 20:+108 21:+291 22:-79 23:+127 24:+88 25:-51 26:-6

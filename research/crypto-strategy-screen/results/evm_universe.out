@@ -1,0 +1,20 @@
+== Original 10 coins: long-only variants (what a spot AMM can execute) ==
+B* L/S (reference)                             hold    24h | yrs+ 8/9 | CAGR +20.2% | maxDD  -24% | Sharpe taker +0.99 maker +1.13 1h-delay +0.98 | coins+ 10/10 | 18:+62 19:+8 20:+8 21:+54 22:+20 23:+24 24:+2 25:+20 26:-6
+B* long-only (buy 24h dips in uptrends)        hold    24h | yrs+ 7/9 | CAGR +14.4% | maxDD  -16% | Sharpe taker +0.97 maker +1.06 1h-delay +0.96 | coins+ 10/10 | 18:+3 19:+11 20:+10 21:+45 22:-4 23:+34 24:+24 25:+12 26:-1
+B* k=2.0 long-only                             hold    24h | yrs+ 7/9 | CAGR +14.6% | maxDD  -11% | Sharpe taker +1.56 maker +1.64 1h-delay +1.34 | coins+ 10/10 | 18:+19 19:+15 20:+17 21:+35 22:-5 23:+19 24:+27 25:+6 26:-0
+R3 long/flat (reference)                       hold   156h | yrs+ 6/9 | CAGR +21.1% | maxDD  -20% | Sharpe taker +1.23 maker +1.28 1h-delay +1.19 | coins+ 10/10 | 18:-12 19:+59 20:+64 21:+42 22:-8 23:+34 24:+35 25:-6 26:+4
+
+== EVM-tradeable universe (WETH, WBTC, LINK, UNI, AAVE, WAVAX) ==
+first bar: {'ETH-USD': '2016-12-20', 'BTC-USD': '2016-12-20', 'LINK-USD': '2019-06-27', 'UNI-USD': '2020-09-17', 'AAVE-USD': '2020-12-15', 'AVAX-USD': '2021-09-30'}
+B* L/S                                         hold    24h | yrs+ 9/9 | CAGR +18.4% | maxDD  -29% | Sharpe taker +0.89 maker +1.02 1h-delay +0.82 | coins+ 5/10 | 18:+85 19:+10 20:+4 21:+11 22:+28 23:+11 24:+3 25:+21 26:+5
+B* long-only                                   hold    24h | yrs+ 8/9 | CAGR +10.7% | maxDD  -21% | Sharpe taker +0.74 maker +0.83 1h-delay +0.76 | coins+ 6/10 | 18:+9 19:+9 20:+1 21:+32 22:-0 23:+20 24:+21 25:+6 26:+1
+B* k=2.0 long-only                             hold    24h | yrs+ 7/9 | CAGR +12.5% | maxDD  -10% | Sharpe taker +1.20 maker +1.27 1h-delay +1.04 | coins+ 6/10 | 18:+27 19:+19 20:+19 21:+13 22:-5 23:+14 24:+29 25:+1 26:-1
+R3 long/flat                                   hold   178h | yrs+ 7/9 | CAGR +22.6% | maxDD  -21% | Sharpe taker +1.24 maker +1.29 1h-delay +1.17 | coins+ 6/10 | 18:-9 19:+66 20:+77 21:+29 22:-9 23:+30 24:+29 25:+1 26:+12
+buy&hold                                       hold  8779h | yrs+ 6/9 | CAGR +27.1% | maxDD  -87% | Sharpe taker +0.72 maker +0.72 1h-delay +0.72 | coins+ 6/10 | 18:-74 19:+77 20:+425 21:+303 22:-72 23:+152 24:+93 25:-38 26:+1
+
+-- B* long-only on EVM universe: cost sensitivity (DEX fee + gas + impact per round trip) --
+  0.10% (L2, 0.05% pools)    CAGR +11.6%  Sharpe +0.79  yrs+ 9/9  maxDD -21%
+  0.20%                      CAGR +9.9%  Sharpe +0.69  yrs+ 7/9  maxDD -22%
+  0.30%                      CAGR +8.2%  Sharpe +0.59  yrs+ 6/9  maxDD -22%
+  0.60% (v2 0.30% pools)     CAGR +3.4%  Sharpe +0.30  yrs+ 5/9  maxDD -23%
+  1.00%                      CAGR -2.7%  Sharpe -0.10  yrs+ 4/9  maxDD -31%

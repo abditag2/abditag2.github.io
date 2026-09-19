@@ -14,7 +14,7 @@ def load_hourly(path):
     df = pd.DataFrame(rows, columns=["t","low","high","open","close","volume"])
     df["t"] = pd.to_datetime(df["t"], unit="s", utc=True)
     df = df.set_index("t").sort_index(); df = df[~df.index.duplicated()]
-    return df
+    return df.astype(float)
 
 def load_coin(c):
     import os

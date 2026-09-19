@@ -1,0 +1,28 @@
+All figures 2018-01-01..2026-09-19, equal weight over listed coins, compounded daily; per-year portfolio returns at taker 0.15%
+
+-- Family A: trend ensemble, vol target 40%, holding-period sweep --
+R3 ref {7,14,30,60}d daily                     hold   179h | yrs+ 8/9 | CAGR +22.4% | maxDD  -25% | Sharpe taker +0.95 maker +1.02 1h-delay +0.89 | coins+ 10/10 | 18:+22 19:+62 20:+35 21:+33 22:+14 23:+20 24:+20 25:-9 26:+10
+A3 {5,10,20,30}d daily                         hold   155h | yrs+ 6/9 | CAGR +22.9% | maxDD  -29% | Sharpe taker +0.93 maker +1.01 1h-delay +0.87 | coins+ 10/10 | 18:+41 19:+49 20:+65 21:+32 22:-1 23:+27 24:+20 25:-10 26:-2
+A2 {3,5,10,14}d daily                          hold   110h | yrs+ 7/9 | CAGR +18.1% | maxDD  -30% | Sharpe taker +0.77 maker +0.88 1h-delay +0.71 | coins+ 9/10 | 18:+45 19:+38 20:+40 21:+23 22:+9 23:+17 24:+22 25:-20 26:-2
+A1 {2,3,5,7}d daily                            hold    90h | yrs+ 8/9 | CAGR +15.2% | maxDD  -33% | Sharpe taker +0.68 maker +0.82 1h-delay +0.63 | coins+ 9/10 | 18:+70 19:+16 20:+21 21:+5 22:+14 23:+19 24:+16 25:-18 26:+6
+A1-4h {2,3,5,7}d rebalanced every 4h           hold    35h | yrs+ 7/9 | CAGR +20.5% | maxDD  -36% | Sharpe taker +0.83 maker +1.18 1h-delay +0.69 | coins+ 9/10 | 18:+82 19:+31 20:+61 21:+2 22:+16 23:+13 24:+28 25:-21 26:-3
+A2-4h {3,5,10,14}d rebalanced every 4h         hold    44h | yrs+ 7/9 | CAGR +22.6% | maxDD  -36% | Sharpe taker +0.91 maker +1.18 1h-delay +0.83 | coins+ 10/10 | 18:+66 19:+42 20:+66 21:+10 22:+22 23:+17 24:+30 25:-17 26:-10
+A0 {1,2,3,5}d rebalanced every 4h              hold    27h | yrs+ 4/9 | CAGR  +2.4% | maxDD  -52% | Sharpe taker +0.22 maker +0.68 1h-delay +0.07 | coins+ 4/10 | 18:+53 19:+9 20:+22 21:-10 22:-1 23:-9 24:+17 25:-29 26:-11
+
+-- Family C: R3 with multi-timeframe exit (flat when 3d trend disagrees) --
+C1 R3 x agree(3d)                              hold    81h | yrs+ 8/9 | CAGR +15.4% | maxDD  -30% | Sharpe taker +0.79 maker +0.90 1h-delay +0.76 | coins+ 7/10 | 18:+40 19:+29 20:+29 21:+14 22:+17 23:+11 24:+14 25:-19 26:+11
+C2 R3 x agree(1d)                              hold    45h | yrs+ 5/9 | CAGR  +1.2% | maxDD  -27% | Sharpe taker +0.15 maker +0.34 1h-delay +0.17 | coins+ 7/10 | 18:-11 19:+10 20:-3 21:+3 22:-4 23:+4 24:+11 25:-12 26:+16
+
+-- Family B: dip-in-trend stability grid (k=1.5 sigma) --
+B trend=30d dip=12h hold=12h                   hold    13h | yrs+ 4/9 | CAGR  -8.0% | maxDD  -58% | Sharpe taker -0.23 maker +0.07 1h-delay -0.63 | coins+ 5/10 | 18:-16 19:-33 20:+21 21:+21 22:-24 23:+7 24:+2 25:-18 26:-14
+B trend=30d dip=12h hold=24h                   hold    25h | yrs+ 3/9 | CAGR  +0.8% | maxDD  -59% | Sharpe taker +0.18 maker +0.38 1h-delay +0.06 | coins+ 6/10 | 18:-34 19:-13 20:+25 21:+98 22:-22 23:+21 24:-8 25:-5 26:-9
+B trend=30d dip=12h hold=48h                   hold    50h | yrs+ 3/9 | CAGR  -2.0% | maxDD  -64% | Sharpe taker +0.13 maker +0.27 1h-delay -0.02 | coins+ 5/10 | 18:-36 19:-14 20:+47 21:+97 22:-4 23:+7 24:-6 25:-33 26:-17
+B trend=30d dip=24h hold=12h                   hold    15h | yrs+ 7/9 | CAGR +12.5% | maxDD  -23% | Sharpe taker +0.70 maker +0.93 1h-delay +0.64 | coins+ 8/10 | 18:+28 19:-8 20:+14 21:+92 22:+4 23:+9 24:+1 25:+3 26:-8
+B trend=30d dip=24h hold=24h                   hold    25h | yrs+ 6/9 | CAGR +17.3% | maxDD  -26% | Sharpe taker +0.78 maker +0.94 1h-delay +0.73 | coins+ 9/10 | 18:+46 19:-5 20:+24 21:+105 22:+0 23:+18 24:-1 25:+11 26:-13
+B trend=30d dip=24h hold=48h                   hold    51h | yrs+ 3/9 | CAGR  +2.9% | maxDD  -43% | Sharpe taker +0.25 maker +0.36 1h-delay +0.16 | coins+ 5/10 | 18:-1 19:-7 20:+13 21:+78 22:-10 23:+10 24:-19 25:-8 26:-6
+B trend=ens dip=12h hold=12h                   hold    13h | yrs+ 5/9 | CAGR  -3.7% | maxDD  -42% | Sharpe taker -0.07 maker +0.18 1h-delay -0.37 | coins+ 3/10 | 18:+8 19:-16 20:+6 21:+11 22:-19 23:+7 24:+2 25:-14 26:-10
+B trend=ens dip=12h hold=24h                   hold    25h | yrs+ 5/9 | CAGR  +3.4% | maxDD  -36% | Sharpe taker +0.26 maker +0.44 1h-delay +0.15 | coins+ 8/10 | 18:-17 19:+0 20:+13 21:+60 22:-15 23:+15 24:-9 25:+1 26:-1
+B trend=ens dip=12h hold=48h                   hold    50h | yrs+ 4/9 | CAGR  +4.0% | maxDD  -65% | Sharpe taker +0.29 maker +0.40 1h-delay +0.13 | coins+ 7/10 | 18:-10 19:+13 20:+52 21:+76 22:-10 23:+6 24:-15 25:-31 26:-8
+B trend=ens dip=24h hold=12h                   hold    15h | yrs+ 8/9 | CAGR +14.1% | maxDD  -18% | Sharpe taker +0.89 maker +1.08 1h-delay +0.85 | coins+ 10/10 | 18:+34 19:+3 20:+0 21:+60 22:+14 23:+11 24:+2 25:+16 26:-5
+B trend=ens dip=24h hold=24h                   hold    24h | yrs+ 8/9 | CAGR +20.2% | maxDD  -24% | Sharpe taker +0.99 maker +1.13 1h-delay +0.98 | coins+ 10/10 | 18:+62 19:+8 20:+8 21:+54 22:+20 23:+24 24:+2 25:+20 26:-6
+B trend=ens dip=24h hold=48h                   hold    50h | yrs+ 6/9 | CAGR  +8.5% | maxDD  -35% | Sharpe taker +0.44 maker +0.53 1h-delay +0.37 | coins+ 6/10 | 18:+7 19:+4 20:+25 21:+61 22:-4 23:+13 24:-16 25:-4 26:+3
