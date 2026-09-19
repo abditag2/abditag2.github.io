@@ -1,0 +1,4 @@
+state/
+*.db
+.env
+__pycache__/

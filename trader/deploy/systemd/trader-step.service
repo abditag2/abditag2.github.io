@@ -1,0 +1,10 @@
+[Unit]
+Description=trader: one strategy step (paper or live)
+After=network-online.target
+
+[Service]
+Type=oneshot
+User=trader
+WorkingDirectory=/opt/trader
+EnvironmentFile=/opt/trader/.env
+ExecStart=/opt/trader/.venv/bin/python scripts/run.py --mode ${TRADER_MODE} --strategy ${TRADER_STRATEGY} --universe ${TRADER_UNIVERSE} --run-id ${TRADER_RUN_ID} --once

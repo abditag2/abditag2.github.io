@@ -1,0 +1,27 @@
+# Strategy configurations. Parameters come from research/crypto-strategy-screen (README, portfolio study).
+_defaults:
+  overlay_slots: 20          # K: overlay positions of equity/K each
+  dip_sigma: 1.5             # entry when the 24h return is <= -1.5 sigma inside an uptrend
+  hold_hours: 24
+  base_vol_target: 0.30      # per-coin vol target of the trend base
+  exposure_cap: 1.0          # total |positions| / equity, no leverage
+  min_trade_notional: 10.0   # quote units
+  base_rebalance_hour: 23    # decision at the close of the 23:00 UTC bar (= 00:00 UTC)
+  overlay_long_only: true
+  base_enabled: true
+  overlay_enabled: true
+  cash_yield: 0.04           # paper/backtest only: APY accrued on idle cash
+
+p1:                          # the mixed portfolio from the 30%-return study (long/short base needs a venue with shorts)
+  {}
+
+p1_longflat:                 # spot-only version: base clipped at zero by the executor when it cannot short
+  {}
+
+bstar_long:                  # 24h dip overlay alone, long-only, 10 slots of 10%
+  base_enabled: false
+  overlay_slots: 10
+
+r3:                          # trend ensemble alone, 40% vol target
+  overlay_enabled: false
+  base_vol_target: 0.40

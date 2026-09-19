@@ -1,0 +1,12 @@
+[Unit]
+Description=trader dashboard (Streamlit on 127.0.0.1:8501)
+After=network-online.target
+
+[Service]
+User=trader
+WorkingDirectory=/opt/trader
+ExecStart=/opt/trader/.venv/bin/streamlit run dashboard/app.py --server.address 127.0.0.1 --server.port 8501 --server.headless true
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
