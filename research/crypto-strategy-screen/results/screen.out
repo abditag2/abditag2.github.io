@@ -1,0 +1,80 @@
+panel: (41401, 10) 2021-12-29 00:00:00+00:00 2026-09-19 00:00:00+00:00
+missing hours per coin: {'BTC-USD': 0, 'ETH-USD': 0, 'SOL-USD': 0, 'ADA-USD': 0, 'DOGE-USD': 0, 'LINK-USD': 0, 'AVAX-USD': 0, 'DOT-USD': 0, 'LTC-USD': 0, 'ATOM-USD': 0}
+
+### buy&hold (benchmark)
+  [maker 0.06% ] 2022: -95.6%/yr SR -1.07 coins+ 0/10 | 2023: +106.0%/yr SR +1.86 coins+ 10/10 | 2024: +70.4%/yr SR +0.96 coins+ 9/10 | 2025: -31.7%/yr SR -0.42 coins+ 3/10 | 2026 holdout: -9.9%/yr SR -0.18 coins+ 3/10
+  [taker 0.15% ] 2022: -95.6%/yr SR -1.07 coins+ 0/10 | 2023: +106.0%/yr SR +1.86 coins+ 10/10 | 2024: +70.4%/yr SR +0.96 coins+ 9/10 | 2025: -31.7%/yr SR -0.42 coins+ 3/10 | 2026 holdout: -9.9%/yr SR -0.18 coins+ 3/10
+  [spot 0.30%  ] 2022: -95.6%/yr SR -1.07 coins+ 0/10 | 2023: +106.0%/yr SR +1.86 coins+ 10/10 | 2024: +70.4%/yr SR +0.96 coins+ 9/10 | 2025: -31.7%/yr SR -0.42 coins+ 3/10 | 2026 holdout: -9.9%/yr SR -0.18 coins+ 3/10
+  trades/window ~10, avg hold 8265.8h, net per trade +8.451% at taker 0.15%; max DD (portfolio, taker 0.15%) worst window -117.8%
+
+### intraday mom 1h->last 1h
+  [maker 0.06% ] 2022: -26.2%/yr SR -1.65 coins+ 1/10 | 2023: -21.3%/yr SR -2.93 coins+ 0/10 | 2024: -14.8%/yr SR -1.77 coins+ 1/10 | 2025: -17.7%/yr SR -2.14 coins+ 0/10 | 2026 holdout: -20.7%/yr SR -2.98 coins+ 1/10
+  [taker 0.15% ] 2022: -58.8%/yr SR -3.68 coins+ 0/10 | 2023: -53.7%/yr SR -7.20 coins+ 0/10 | 2024: -47.4%/yr SR -5.55 coins+ 0/10 | 2025: -50.2%/yr SR -5.98 coins+ 0/10 | 2026 holdout: -52.8%/yr SR -7.36 coins+ 0/10
+  [spot 0.30%  ] 2022: -113.0%/yr SR -6.92 coins+ 0/10 | 2023: -107.8%/yr SR -13.20 coins+ 0/10 | 2024: -101.7%/yr SR -11.16 coins+ 0/10 | 2025: -104.5%/yr SR -11.61 coins+ 0/10 | 2026 holdout: -106.2%/yr SR -13.47 coins+ 0/10
+  trades/window ~3403, avg hold 1.0h, net per trade -0.146% at taker 0.15%; max DD (portfolio, taker 0.15%) worst window -61.0%
+
+### intraday mom 2h->last 2h
+  [maker 0.06% ] 2022: +4.7%/yr SR +0.24 coins+ 5/10 | 2023: -23.2%/yr SR -1.99 coins+ 1/10 | 2024: -5.0%/yr SR -0.35 coins+ 4/10 | 2025: -44.7%/yr SR -2.76 coins+ 0/10 | 2026 holdout: -4.8%/yr SR -0.37 coins+ 4/10
+  [taker 0.15% ] 2022: -27.9%/yr SR -1.41 coins+ 1/10 | 2023: -55.7%/yr SR -4.71 coins+ 0/10 | 2024: -37.7%/yr SR -2.65 coins+ 0/10 | 2025: -77.3%/yr SR -4.74 coins+ 0/10 | 2026 holdout: -37.0%/yr SR -2.86 coins+ 1/10
+  [spot 0.30%  ] 2022: -82.2%/yr SR -4.11 coins+ 0/10 | 2023: -109.8%/yr SR -8.90 coins+ 0/10 | 2024: -92.2%/yr SR -6.33 coins+ 0/10 | 2025: -131.8%/yr SR -7.89 coins+ 0/10 | 2026 holdout: -90.7%/yr SR -6.81 coins+ 0/10
+  trades/window ~3411, avg hold 2.0h, net per trade -0.130% at taker 0.15%; max DD (portfolio, taker 0.15%) worst window -79.4%
+
+### residual reversal 4h (alt only)
+  [maker 0.06% ] 2022: -24.8%/yr SR -1.10 coins+ 1/10 | 2023: -5.8%/yr SR -0.45 coins+ 3/10 | 2024: -19.3%/yr SR -1.06 coins+ 3/10 | 2025: -14.6%/yr SR -0.85 coins+ 1/10 | 2026 holdout: -11.3%/yr SR -0.86 coins+ 2/10
+  [taker 0.15% ] 2022: -33.0%/yr SR -1.46 coins+ 1/10 | 2023: -16.0%/yr SR -1.22 coins+ 2/10 | 2024: -29.0%/yr SR -1.58 coins+ 2/10 | 2025: -23.1%/yr SR -1.34 coins+ 0/10 | 2026 holdout: -20.8%/yr SR -1.58 coins+ 2/10
+  [spot 0.30%  ] 2022: -46.6%/yr SR -2.06 coins+ 0/10 | 2023: -32.8%/yr SR -2.51 coins+ 1/10 | 2024: -45.1%/yr SR -2.46 coins+ 2/10 | 2025: -37.3%/yr SR -2.16 coins+ 0/10 | 2026 holdout: -36.7%/yr SR -2.79 coins+ 0/10
+  trades/window ~906, avg hold 4.6h, net per trade -0.258% at taker 0.15%; max DD (portfolio, taker 0.15%) worst window -47.3%
+
+### residual reversal 4h (hedged)
+  [maker 0.06% ] 2022: -9.1%/yr SR -0.77 coins+ 2/10 | 2023: -20.2%/yr SR -2.05 coins+ 3/10 | 2024: -10.5%/yr SR -0.83 coins+ 4/10 | 2025: -14.2%/yr SR -1.26 coins+ 2/10 | 2026 holdout: -13.1%/yr SR -1.49 coins+ 2/10
+  [taker 0.15% ] 2022: -27.0%/yr SR -2.25 coins+ 2/10 | 2023: -40.9%/yr SR -4.14 coins+ 2/10 | 2024: -30.4%/yr SR -2.40 coins+ 2/10 | 2025: -35.2%/yr SR -3.10 coins+ 0/10 | 2026 holdout: -32.8%/yr SR -3.69 coins+ 2/10
+  [spot 0.30%  ] 2022: -56.8%/yr SR -4.69 coins+ 0/10 | 2023: -75.5%/yr SR -7.49 coins+ 1/10 | 2024: -63.5%/yr SR -4.95 coins+ 2/10 | 2025: -70.2%/yr SR -6.05 coins+ 0/10 | 2026 holdout: -65.5%/yr SR -7.22 coins+ 0/10
+  trades/window ~1250, avg hold 5.0h, net per trade -0.250% at taker 0.15%; max DD (portfolio, taker 0.15%) worst window -41.4%
+
+### tsmom 7d long/short
+  [maker 0.06% ] 2022: +39.6%/yr SR +0.52 coins+ 7/10 | 2023: +44.4%/yr SR +0.95 coins+ 8/10 | 2024: +19.4%/yr SR +0.31 coins+ 7/10 | 2025: -47.9%/yr SR -0.76 coins+ 2/10 | 2026 holdout: +17.0%/yr SR +0.36 coins+ 7/10
+  [taker 0.15% ] 2022: +34.0%/yr SR +0.44 coins+ 7/10 | 2023: +38.4%/yr SR +0.82 coins+ 7/10 | 2024: +13.8%/yr SR +0.22 coins+ 6/10 | 2025: -53.9%/yr SR -0.86 coins+ 2/10 | 2026 holdout: +10.9%/yr SR +0.23 coins+ 7/10
+  [spot 0.30%  ] 2022: +24.7%/yr SR +0.32 coins+ 7/10 | 2023: +28.4%/yr SR +0.61 coins+ 4/10 | 2024: +4.5%/yr SR +0.07 coins+ 4/10 | 2025: -63.9%/yr SR -1.01 coins+ 2/10 | 2026 holdout: +0.8%/yr SR +0.02 coins+ 6/10
+  trades/window ~13, avg hold 6677.1h, net per trade +6.214% at taker 0.15%; max DD (portfolio, taker 0.15%) worst window -78.2%
+
+### tsmom 30d long/short
+  [maker 0.06% ] 2022: +10.8%/yr SR +0.15 coins+ 7/10 | 2023: +56.9%/yr SR +1.18 coins+ 9/10 | 2024: +39.3%/yr SR +0.66 coins+ 7/10 | 2025: -10.8%/yr SR -0.17 coins+ 5/10 | 2026 holdout: -11.1%/yr SR -0.24 coins+ 2/10
+  [taker 0.15% ] 2022: +8.3%/yr SR +0.12 coins+ 7/10 | 2023: +54.7%/yr SR +1.13 coins+ 9/10 | 2024: +36.3%/yr SR +0.61 coins+ 7/10 | 2025: -13.4%/yr SR -0.21 coins+ 5/10 | 2026 holdout: -14.5%/yr SR -0.31 coins+ 2/10
+  [spot 0.30%  ] 2022: +4.0%/yr SR +0.06 coins+ 7/10 | 2023: +51.0%/yr SR +1.06 coins+ 9/10 | 2024: +31.2%/yr SR +0.52 coins+ 7/10 | 2025: -17.8%/yr SR -0.28 coins+ 3/10 | 2026 holdout: -20.3%/yr SR -0.43 coins+ 1/10
+  trades/window ~12, avg hold 6989.9h, net per trade +12.292% at taker 0.15%; max DD (portfolio, taker 0.15%) worst window -59.4%
+
+### tsmom 30d long/flat
+  [maker 0.06% ] 2022: -30.0%/yr SR -0.87 coins+ 3/10 | 2023: +81.3%/yr SR +1.94 coins+ 9/10 | 2024: +54.9%/yr SR +1.05 coins+ 10/10 | 2025: -21.4%/yr SR -0.58 coins+ 4/10 | 2026 holdout: -10.4%/yr SR -0.35 coins+ 2/10
+  [taker 0.15% ] 2022: -31.3%/yr SR -0.90 coins+ 3/10 | 2023: +80.2%/yr SR +1.92 coins+ 9/10 | 2024: +53.3%/yr SR +1.02 coins+ 10/10 | 2025: -22.7%/yr SR -0.62 coins+ 3/10 | 2026 holdout: -12.1%/yr SR -0.41 coins+ 2/10
+  [spot 0.30%  ] 2022: -33.4%/yr SR -0.96 coins+ 3/10 | 2023: +78.4%/yr SR +1.87 coins+ 9/10 | 2024: +50.8%/yr SR +0.97 coins+ 10/10 | 2025: -24.9%/yr SR -0.68 coins+ 3/10 | 2026 holdout: -15.0%/yr SR -0.51 coins+ 2/10
+  trades/window ~147, avg hold 246.7h, net per trade +1.010% at taker 0.15%; max DD (portfolio, taker 0.15%) worst window -43.8%
+
+### xs mom 28d weekly top3/bottom3
+  [maker 0.06% ] 2022: +7.7%/yr SR +0.51 coins+ 4/10 | 2023: +17.6%/yr SR +1.39 coins+ 6/10 | 2024: -13.5%/yr SR -0.96 coins+ 4/10 | 2025: +3.9%/yr SR +0.35 coins+ 4/10 | 2026 holdout: -19.0%/yr SR -2.07 coins+ 4/10
+  [taker 0.15% ] 2022: +6.8%/yr SR +0.45 coins+ 4/10 | 2023: +16.6%/yr SR +1.31 coins+ 6/10 | 2024: -14.7%/yr SR -1.05 coins+ 4/10 | 2025: +3.0%/yr SR +0.27 coins+ 4/10 | 2026 holdout: -19.9%/yr SR -2.18 coins+ 4/10
+  [spot 0.30%  ] 2022: +5.4%/yr SR +0.36 coins+ 4/10 | 2023: +15.0%/yr SR +1.18 coins+ 6/10 | 2024: -16.6%/yr SR -1.18 coins+ 4/10 | 2025: +1.5%/yr SR +0.13 coins+ 4/10 | 2026 holdout: -21.6%/yr SR -2.35 coins+ 4/10
+  trades/window ~92, avg hold 534.2h, net per trade -0.128% at taker 0.15%; max DD (portfolio, taker 0.15%) worst window -22.4%
+
+### donchian 80h/40h
+  [maker 0.06% ] 2022: +2.7%/yr SR +0.04 coins+ 6/10 | 2023: +12.1%/yr SR +0.30 coins+ 4/10 | 2024: +53.8%/yr SR +0.97 coins+ 8/10 | 2025: -50.3%/yr SR -0.90 coins+ 0/10 | 2026 holdout: +11.0%/yr SR +0.27 coins+ 6/10
+  [taker 0.15% ] 2022: -3.9%/yr SR -0.06 coins+ 5/10 | 2023: +6.0%/yr SR +0.15 coins+ 3/10 | 2024: +47.6%/yr SR +0.86 coins+ 8/10 | 2025: -57.6%/yr SR -1.03 coins+ 0/10 | 2026 holdout: +4.6%/yr SR +0.11 coins+ 6/10
+  [spot 0.30%  ] 2022: -14.9%/yr SR -0.21 coins+ 5/10 | 2023: -4.1%/yr SR -0.10 coins+ 3/10 | 2024: +37.1%/yr SR +0.67 coins+ 8/10 | 2025: -69.8%/yr SR -1.25 coins+ 0/10 | 2026 holdout: -6.1%/yr SR -0.15 coins+ 5/10
+  trades/window ~573, avg hold 105.1h, net per trade +0.018% at taker 0.15%; max DD (portfolio, taker 0.15%) worst window -85.3%
+
+### breakout 24h, exit day end
+  [maker 0.06% ] 2022: -41.1%/yr SR -0.72 coins+ 3/10 | 2023: -11.8%/yr SR -0.36 coins+ 4/10 | 2024: -36.8%/yr SR -0.84 coins+ 2/10 | 2025: -40.3%/yr SR -0.90 coins+ 1/10 | 2026 holdout: +4.4%/yr SR +0.14 coins+ 5/10
+  [taker 0.15% ] 2022: -66.8%/yr SR -1.18 coins+ 1/10 | 2023: -35.9%/yr SR -1.11 coins+ 3/10 | 2024: -63.2%/yr SR -1.45 coins+ 2/10 | 2025: -66.7%/yr SR -1.48 coins+ 1/10 | 2026 holdout: -21.0%/yr SR -0.66 coins+ 4/10
+  [spot 0.30%  ] 2022: -109.5%/yr SR -1.93 coins+ 0/10 | 2023: -76.0%/yr SR -2.35 coins+ 0/10 | 2024: -107.1%/yr SR -2.46 coins+ 0/10 | 2025: -110.7%/yr SR -2.46 coins+ 0/10 | 2026 holdout: -63.3%/yr SR -1.98 coins+ 0/10
+  trades/window ~2683, avg hold 14.2h, net per trade -0.177% at taker 0.15%; max DD (portfolio, taker 0.15%) worst window -101.4%
+
+### long US hours 13-21 UTC
+  [maker 0.06% ] 2022: -42.3%/yr SR -0.76 coins+ 2/10 | 2023: -39.4%/yr SR -1.05 coins+ 1/10 | 2024: -58.5%/yr SR -1.19 coins+ 0/10 | 2025: -57.2%/yr SR -1.12 coins+ 1/10 | 2026 holdout: +1.3%/yr SR +0.03 coins+ 6/10
+  [taker 0.15% ] 2022: -75.2%/yr SR -1.34 coins+ 1/10 | 2023: -72.3%/yr SR -1.92 coins+ 0/10 | 2024: -91.4%/yr SR -1.85 coins+ 0/10 | 2025: -90.0%/yr SR -1.76 coins+ 0/10 | 2026 holdout: -31.6%/yr SR -0.86 coins+ 0/10
+  [spot 0.30%  ] 2022: -129.9%/yr SR -2.32 coins+ 0/10 | 2023: -127.0%/yr SR -3.37 coins+ 0/10 | 2024: -146.1%/yr SR -2.95 coins+ 0/10 | 2025: -144.8%/yr SR -2.83 coins+ 0/10 | 2026 holdout: -86.3%/yr SR -2.34 coins+ 0/10
+  trades/window ~3444, avg hold 8.0h, net per trade -0.198% at taker 0.15%; max DD (portfolio, taker 0.15%) worst window -107.9%
+
+### long Asia hours 0-8 UTC
+  [maker 0.06% ] 2022: -24.3%/yr SR -0.51 coins+ 3/10 | 2023: +23.1%/yr SR +0.75 coins+ 6/10 | 2024: +38.8%/yr SR +1.00 coins+ 9/10 | 2025: -30.1%/yr SR -0.73 coins+ 1/10 | 2026 holdout: -46.2%/yr SR -1.58 coins+ 1/10
+  [taker 0.15% ] 2022: -57.2%/yr SR -1.19 coins+ 1/10 | 2023: -9.7%/yr SR -0.32 coins+ 4/10 | 2024: +6.0%/yr SR +0.15 coins+ 5/10 | 2025: -62.9%/yr SR -1.53 coins+ 0/10 | 2026 holdout: -79.1%/yr SR -2.69 coins+ 0/10
+  [spot 0.30%  ] 2022: -111.9%/yr SR -2.33 coins+ 0/10 | 2023: -64.5%/yr SR -2.08 coins+ 1/10 | 2024: -48.8%/yr SR -1.25 coins+ 1/10 | 2025: -117.7%/yr SR -2.84 coins+ 0/10 | 2026 holdout: -133.8%/yr SR -4.53 coins+ 0/10
+  trades/window ~3454, avg hold 8.0h, net per trade -0.111% at taker 0.15%; max DD (portfolio, taker 0.15%) worst window -71.2%

@@ -1,0 +1,15 @@
+Compounded, equal-weight over listed coins, daily rebalanced, taker 0.15% RT costs, 2018-01-01 .. 2026-09-19
+strategy                      CAGR   maxDD  Sharpe pos.months  worst mo  avg |exposure|
+R3 trend ensemble L/S        22.4%    -25%    0.95        52%     -8.0%           0.32
+R3 long/flat (spot only)     21.1%    -20%    1.23        40%     -4.7%           0.15
+R2 dip-in-trend 24h          17.3%    -26%    0.78        56%    -16.4%           0.13
+buy&hold                     13.5%    -87%    0.58        52%    -42.1%           1.00
+
+R3 L/S: compounded return by calendar year (portfolio) and per-coin net total (sum of hourly returns, 2018-2026):
+  by year: 2018: +21.8%  2019: +61.8%  2020: +35.3%  2021: +33.4%  2022: +14.1%  2023: +20.4%  2024: +19.5%  2025: -8.8%  2026: +9.7%
+  per coin: BTC +255% (8.7y)  ETH +331% (8.7y)  SOL +158% (5.3y)  ADA +78% (5.5y)  DOGE +72% (5.3y)  LINK +69% (7.2y)  AVAX +116% (5.0y)  DOT +34% (5.3y)  LTC +62% (8.7y)  ATOM +49% (6.7y)
+  directional holding period (hours in position / sign changes), median across coins: 179h; sign changes per coin per year, median: 39
+
+Funding paid by R3 positions over the last 12 months (Kraken hourly funding, position x rate, negative = cost):
+  BTC-USD: funding P&L +0.08% vs strategy net P&L +25.59% over 1.0y  (avg position -0.08)
+  ETH-USD: funding P&L -0.46% vs strategy net P&L +31.66% over 1.0y  (avg position -0.05)

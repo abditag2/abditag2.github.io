@@ -1,0 +1,46 @@
+panel: (85429, 10) 2016-12-20 12:00:00+00:00 -> 2026-09-19 00:00:00+00:00
+first listed: {'BTC-USD': '2016-12-20', 'ETH-USD': '2016-12-20', 'SOL-USD': '2021-06-17', 'ADA-USD': '2021-03-18', 'DOGE-USD': '2021-06-03', 'LINK-USD': '2019-06-27', 'AVAX-USD': '2021-09-30', 'DOT-USD': '2021-06-16', 'LTC-USD': '2016-12-20', 'ATOM-USD': '2020-01-14'}
+
+### buy&hold (benchmark)
+  [taker 0.15% ] 2018: -104.4%/yr SR -0.99 coins+ 0/3 | 2019: +86.2%/yr SR +1.14 coins+ 4/4 | 2020: +190.6%/yr SR +2.08 coins+ 5/5 | 2021: +193.0%/yr SR +1.67 coins+ 9/10 | 2022: -95.6%/yr SR -1.07 coins+ 0/10 | 2023: +107.5%/yr SR +1.88 coins+ 10/10 | 2024: +70.4%/yr SR +0.96 coins+ 9/10 | 2025: -32.3%/yr SR -0.43 coins+ 3/10 | 2026 holdout: -10.1%/yr SR -0.18 coins+ 3/10
+  [maker 0.06% ] 2018: -104.2%/yr SR -0.99 coins+ 0/3 | 2019: +86.3%/yr SR +1.14 coins+ 4/4 | 2020: +190.8%/yr SR +2.08 coins+ 5/5 | 2021: +193.1%/yr SR +1.67 coins+ 9/10 | 2022: -95.6%/yr SR -1.07 coins+ 0/10 | 2023: +107.6%/yr SR +1.89 coins+ 10/10 | 2024: +70.4%/yr SR +0.96 coins+ 9/10 | 2025: -32.3%/yr SR -0.43 coins+ 3/10 | 2026 holdout: -10.0%/yr SR -0.18 coins+ 3/10
+  trades/window ~16, avg hold 4719.5h, net per trade +28.318% at taker 0.15%; max DD (portfolio, taker 0.15%) worst window -170.0%
+
+### R3 trend ensemble 7/14/30/60d vol-target 40%
+  [taker 0.15% ] 2018: +23.5%/yr SR +0.81 coins+ 3/3 | 2019: +52.4%/yr SR +1.93 coins+ 4/4 | 2020: +33.1%/yr SR +1.37 coins+ 4/5 | 2021: +30.7%/yr SR +1.40 coins+ 8/10 | 2022: +16.7%/yr SR +0.61 coins+ 7/10 | 2023: +20.9%/yr SR +0.87 coins+ 7/10 | 2024: +20.1%/yr SR +0.82 coins+ 8/10 | 2025: -6.5%/yr SR -0.26 coins+ 4/10 | 2026 holdout: +16.1%/yr SR +0.64 coins+ 5/10
+  [maker 0.06% ] 2018: +25.1%/yr SR +0.86 coins+ 3/3 | 2019: +54.1%/yr SR +2.00 coins+ 4/4 | 2020: +34.8%/yr SR +1.44 coins+ 4/5 | 2021: +31.6%/yr SR +1.45 coins+ 8/10 | 2022: +18.3%/yr SR +0.67 coins+ 7/10 | 2023: +23.3%/yr SR +0.97 coins+ 9/10 | 2024: +22.0%/yr SR +0.90 coins+ 8/10 | 2025: -4.7%/yr SR -0.19 coins+ 4/10 | 2026 holdout: +18.8%/yr SR +0.75 coins+ 6/10
+  trades/window ~300, avg hold 173.0h, net per trade +0.641% at taker 0.15%; max DD (portfolio, taker 0.15%) worst window -27.2%
+
+### R2 dip-in-trend, hold 24h
+  [taker 0.15% ] 2018: +41.7%/yr SR +1.17 coins+ 3/3 | 2019: -2.2%/yr SR -0.09 coins+ 1/4 | 2020: +24.7%/yr SR +0.81 coins+ 5/5 | 2021: +78.9%/yr SR +1.72 coins+ 9/10 | 2022: +4.2%/yr SR +0.16 coins+ 5/10 | 2023: +17.4%/yr SR +1.01 coins+ 9/10 | 2024: +0.9%/yr SR +0.03 coins+ 4/10 | 2025: +12.6%/yr SR +0.56 coins+ 7/10 | 2026 holdout: -18.8%/yr SR -1.22 coins+ 2/10
+  [maker 0.06% ] 2018: +46.0%/yr SR +1.29 coins+ 3/3 | 2019: +0.8%/yr SR +0.03 coins+ 1/4 | 2020: +28.9%/yr SR +0.94 coins+ 5/5 | 2021: +83.1%/yr SR +1.81 coins+ 10/10 | 2022: +8.0%/yr SR +0.30 coins+ 6/10 | 2023: +21.6%/yr SR +1.26 coins+ 9/10 | 2024: +5.1%/yr SR +0.20 coins+ 4/10 | 2025: +16.8%/yr SR +0.75 coins+ 8/10 | 2026 holdout: -14.4%/yr SR -0.94 coins+ 2/10
+  trades/window ~338, avg hold 24.6h, net per trade +0.437% at taker 0.15%; max DD (portfolio, taker 0.15%) worst window -32.8%
+
+### tsmom 30d long/short
+  [taker 0.15% ] 2018: -8.1%/yr SR -0.10 coins+ 1/3 | 2019: +54.1%/yr SR +0.85 coins+ 3/4 | 2020: +84.3%/yr SR +1.06 coins+ 4/5 | 2021: +100.8%/yr SR +1.11 coins+ 8/10 | 2022: +12.8%/yr SR +0.18 coins+ 6/10 | 2023: +52.9%/yr SR +1.10 coins+ 9/10 | 2024: +36.3%/yr SR +0.61 coins+ 7/10 | 2025: -12.9%/yr SR -0.20 coins+ 5/10 | 2026 holdout: -14.7%/yr SR -0.31 coins+ 2/10
+  [maker 0.06% ] 2018: -5.4%/yr SR -0.06 coins+ 1/3 | 2019: +56.6%/yr SR +0.89 coins+ 3/4 | 2020: +86.7%/yr SR +1.09 coins+ 4/5 | 2021: +103.0%/yr SR +1.13 coins+ 8/10 | 2022: +15.5%/yr SR +0.21 coins+ 6/10 | 2023: +55.2%/yr SR +1.14 coins+ 9/10 | 2024: +39.3%/yr SR +0.66 coins+ 7/10 | 2025: -10.3%/yr SR -0.16 coins+ 5/10 | 2026 holdout: -11.2%/yr SR -0.24 coins+ 2/10
+  trades/window ~230, avg hold 282.6h, net per trade +1.414% at taker 0.15%; max DD (portfolio, taker 0.15%) worst window -96.7%
+
+### xs mom 28d weekly top3/bottom3
+  [taker 0.15% ] 2018: +0.0%/yr SR +nan coins+ 0/3 | 2019: +0.0%/yr SR +nan coins+ 0/4 | 2020: +0.0%/yr SR +nan coins+ 0/5 | 2021: +1.1%/yr SR +0.05 coins+ 5/10 | 2022: +10.8%/yr SR +0.68 coins+ 4/10 | 2023: +16.4%/yr SR +1.29 coins+ 6/10 | 2024: -14.7%/yr SR -1.05 coins+ 4/10 | 2025: +3.0%/yr SR +0.27 coins+ 4/10 | 2026 holdout: -20.1%/yr SR -2.19 coins+ 4/10
+  [maker 0.06% ] 2018: +0.0%/yr SR +nan coins+ 0/3 | 2019: +0.0%/yr SR +nan coins+ 0/4 | 2020: +0.0%/yr SR +nan coins+ 0/5 | 2021: +1.9%/yr SR +0.09 coins+ 5/10 | 2022: +11.7%/yr SR +0.73 coins+ 5/10 | 2023: +17.4%/yr SR +1.37 coins+ 6/10 | 2024: -13.5%/yr SR -0.96 coins+ 4/10 | 2025: +3.9%/yr SR +0.35 coins+ 4/10 | 2026 holdout: -19.1%/yr SR -2.08 coins+ 4/10
+  trades/window ~72, avg hold 443.8h, net per trade +0.014% at taker 0.15%; max DD (portfolio, taker 0.15%) worst window -27.8%
+
+### intraday mom 1h->last 1h
+  [taker 0.15% ] 2018: -74.0%/yr SR -3.84 coins+ 0/3 | 2019: -41.6%/yr SR -3.18 coins+ 0/4 | 2020: -29.1%/yr SR -1.50 coins+ 0/5 | 2021: -39.0%/yr SR -1.81 coins+ 1/10 | 2022: -58.8%/yr SR -3.68 coins+ 0/10 | 2023: -53.7%/yr SR -7.20 coins+ 0/10 | 2024: -47.4%/yr SR -5.55 coins+ 0/10 | 2025: -50.2%/yr SR -5.98 coins+ 0/10 | 2026 holdout: -52.8%/yr SR -7.36 coins+ 0/10
+  [maker 0.06% ] 2018: -41.2%/yr SR -2.15 coins+ 0/3 | 2019: -8.9%/yr SR -0.68 coins+ 1/4 | 2020: +3.6%/yr SR +0.18 coins+ 4/5 | 2021: -6.3%/yr SR -0.29 coins+ 5/10 | 2022: -26.2%/yr SR -1.65 coins+ 1/10 | 2023: -21.3%/yr SR -2.93 coins+ 0/10 | 2024: -14.8%/yr SR -1.77 coins+ 1/10 | 2025: -17.7%/yr SR -2.14 coins+ 0/10 | 2026 holdout: -20.7%/yr SR -2.98 coins+ 1/10
+  trades/window ~2667, avg hold 1.0h, net per trade -0.143% at taker 0.15%; max DD (portfolio, taker 0.15%) worst window -74.9%
+
+pooled all windows 2018-2025 (dev) and 2026 (holdout), taker 0.15%:
+  buy&hold (benchmark)                             2018-2025: ann +52.0%  Sharpe +0.60  t≈+1.7  maxDD -170%
+  buy&hold (benchmark)                             2026: ann -10.1%  Sharpe -0.18  t≈-0.2  maxDD -69%
+  R3 trend ensemble 7/14/30/60d vol-target 40%     2018-2025: ann +23.9%  Sharpe +0.94  t≈+2.6  maxDD -28%
+  R3 trend ensemble 7/14/30/60d vol-target 40%     2026: ann +16.1%  Sharpe +0.64  t≈+0.5  maxDD -20%
+  R2 dip-in-trend, hold 24h                        2018-2025: ann +22.3%  Sharpe +0.75  t≈+2.1  maxDD -33%
+  R2 dip-in-trend, hold 24h                        2026: ann -18.8%  Sharpe -1.22  t≈-1.0  maxDD -16%
+  tsmom 30d long/short                             2018-2025: ann +40.0%  Sharpe +0.56  t≈+1.6  maxDD -115%
+  tsmom 30d long/short                             2026: ann -14.7%  Sharpe -0.31  t≈-0.3  maxDD -43%
+  xs mom 28d weekly top3/bottom3                   2018-2025: ann +2.1%  Sharpe +0.17  t≈+0.5  maxDD -28%
+  xs mom 28d weekly top3/bottom3                   2026: ann -20.1%  Sharpe -2.19  t≈-1.9  maxDD -16%
+  intraday mom 1h->last 1h                         2018-2025: ann -49.2%  Sharpe -3.25  t≈-9.2  maxDD -395%
+  intraday mom 1h->last 1h                         2026: ann -52.8%  Sharpe -7.36  t≈-6.2  maxDD -38%

@@ -1,0 +1,132 @@
+
+=== BTC-USD  k=3-sigma 5-min move, volume>=3x median  (90 days) ===
+events: 379  (down moves: 175, up moves: 204)
+mean |trigger move|: 0.38%
+no exhaustion within 30 min (cascade kept going): 0
+after trigger, price ran a further -0.14% on average (median -0.03%) before stalling; avg wait 5.2 min
+entry    horizon     N     mean   median   hit%      t
+naive         5m   379   0.015%   0.028%    60%   1.36
+naive        15m   379   0.010%   0.042%    59%   0.52
+naive        30m   379   0.012%   0.048%    55%   0.52
+naive        60m   379   0.048%   0.060%    58%   1.63
+exh           5m   379  -0.012%   0.002%    52%  -1.30
+exh          15m   379  -0.024%   0.013%    53%  -1.45
+exh          30m   379  -0.014%   0.015%    52%  -0.68
+exh          60m   379   0.020%   0.030%    54%   0.75
+30-min excursions after exhaustion entry: mean adverse -0.32% (median -0.20%), mean favorable 0.25% (median 0.16%)
+rule (stop 20% beyond extreme, target 50% retrace, 30m time stop): N=379 outcomes={'target': 262, 'stop': 94, 'time': 23} hit%=47%
+   gross per trade -0.053%  total -20.04%  t=-5.33
+   net of 0.04% RT fees: per trade -0.093%  total -35.20%
+   net of 0.10% RT fees: per trade -0.153%  total -57.94%
+   net of 0.20% RT fees: per trade -0.253%  total -95.84%
+baseline sd of forward returns: 5m 0.114%, 15m 0.196%, 30m 0.280%, 60m 0.394%
+
+=== BTC-USD  k=4-sigma 5-min move, volume>=3x median  (90 days) ===
+events: 211  (down moves: 99, up moves: 112)
+mean |trigger move|: 0.48%
+no exhaustion within 30 min (cascade kept going): 0
+after trigger, price ran a further -0.18% on average (median -0.06%) before stalling; avg wait 5.4 min
+entry    horizon     N     mean   median   hit%      t
+naive         5m   211   0.013%   0.023%    57%   0.70
+naive        15m   211  -0.009%   0.029%    58%  -0.30
+naive        30m   211   0.003%   0.012%    52%   0.08
+naive        60m   211   0.020%   0.040%    55%   0.45
+exh           5m   211  -0.011%   0.009%    55%  -0.79
+exh          15m   211  -0.028%   0.010%    53%  -1.11
+exh          30m   211  -0.020%  -0.013%    48%  -0.60
+exh          60m   211  -0.008%   0.020%    51%  -0.22
+30-min excursions after exhaustion entry: mean adverse -0.36% (median -0.23%), mean favorable 0.30% (median 0.19%)
+rule (stop 20% beyond extreme, target 50% retrace, 30m time stop): N=211 outcomes={'target': 144, 'stop': 51, 'time': 16} hit%=53%
+   gross per trade -0.052%  total -10.93%  t=-3.24
+   net of 0.04% RT fees: per trade -0.092%  total -19.37%
+   net of 0.10% RT fees: per trade -0.152%  total -32.03%
+   net of 0.20% RT fees: per trade -0.252%  total -53.13%
+baseline sd of forward returns: 5m 0.114%, 15m 0.196%, 30m 0.280%, 60m 0.394%
+
+=== BTC-USD  k=5-sigma 5-min move, volume>=4x median  (90 days) ===
+events: 126  (down moves: 51, up moves: 75)
+mean |trigger move|: 0.56%
+no exhaustion within 30 min (cascade kept going): 0
+after trigger, price ran a further -0.22% on average (median -0.06%) before stalling; avg wait 5.5 min
+entry    horizon     N     mean   median   hit%      t
+naive         5m   126   0.016%   0.024%    57%   0.59
+naive        15m   126   0.008%   0.083%    63%   0.17
+naive        30m   126   0.049%   0.055%    60%   0.96
+naive        60m   126   0.049%   0.080%    58%   0.78
+exh           5m   126   0.010%   0.027%    60%   0.53
+exh          15m   126  -0.007%   0.017%    56%  -0.20
+exh          30m   126   0.027%   0.021%    52%   0.59
+exh          60m   126   0.024%   0.040%    52%   0.45
+30-min excursions after exhaustion entry: mean adverse -0.34% (median -0.20%), mean favorable 0.34% (median 0.24%)
+rule (stop 20% beyond extreme, target 50% retrace, 30m time stop): N=126 outcomes={'target': 89, 'stop': 20, 'time': 17} hit%=61%
+   gross per trade -0.019%  total -2.45%  t=-0.84
+   net of 0.04% RT fees: per trade -0.059%  total -7.49%
+   net of 0.10% RT fees: per trade -0.119%  total -15.05%
+   net of 0.20% RT fees: per trade -0.219%  total -27.65%
+baseline sd of forward returns: 5m 0.114%, 15m 0.196%, 30m 0.280%, 60m 0.394%
+
+=== ETH-USD  k=3-sigma 5-min move, volume>=3x median  (90 days) ===
+events: 386  (down moves: 183, up moves: 203)
+mean |trigger move|: 0.52%
+no exhaustion within 30 min (cascade kept going): 0
+after trigger, price ran a further -0.21% on average (median -0.07%) before stalling; avg wait 5.3 min
+entry    horizon     N     mean   median   hit%      t
+naive         5m   386   0.021%   0.044%    58%   1.33
+naive        15m   386   0.025%   0.062%    59%   0.99
+naive        30m   386  -0.006%   0.052%    58%  -0.17
+naive        60m   386   0.017%   0.117%    58%   0.41
+exh           5m   386   0.002%   0.026%    55%   0.16
+exh          15m   386  -0.002%   0.029%    55%  -0.11
+exh          30m   386  -0.007%   0.055%    56%  -0.26
+exh          60m   386  -0.003%   0.061%    55%  -0.07
+30-min excursions after exhaustion entry: mean adverse -0.40% (median -0.22%), mean favorable 0.34% (median 0.26%)
+rule (stop 20% beyond extreme, target 50% retrace, 30m time stop): N=386 outcomes={'target': 286, 'stop': 74, 'time': 26} hit%=48%
+   gross per trade -0.055%  total -21.34%  t=-3.72
+   net of 0.04% RT fees: per trade -0.095%  total -36.78%
+   net of 0.10% RT fees: per trade -0.155%  total -59.94%
+   net of 0.20% RT fees: per trade -0.255%  total -98.54%
+baseline sd of forward returns: 5m 0.155%, 15m 0.269%, 30m 0.385%, 60m 0.543%
+
+=== ETH-USD  k=4-sigma 5-min move, volume>=3x median  (90 days) ===
+events: 228  (down moves: 100, up moves: 128)
+mean |trigger move|: 0.65%
+no exhaustion within 30 min (cascade kept going): 0
+after trigger, price ran a further -0.27% on average (median -0.09%) before stalling; avg wait 5.3 min
+entry    horizon     N     mean   median   hit%      t
+naive         5m   228  -0.002%   0.032%    56%  -0.07
+naive        15m   228  -0.026%   0.083%    60%  -0.59
+naive        30m   228  -0.030%   0.055%    55%  -0.60
+naive        60m   228   0.017%   0.142%    59%   0.28
+exh           5m   228  -0.009%   0.032%    54%  -0.51
+exh          15m   228  -0.022%   0.006%    50%  -0.66
+exh          30m   228  -0.006%   0.034%    53%  -0.15
+exh          60m   228   0.034%   0.041%    52%   0.67
+30-min excursions after exhaustion entry: mean adverse -0.48% (median -0.26%), mean favorable 0.38% (median 0.26%)
+rule (stop 20% beyond extreme, target 50% retrace, 30m time stop): N=228 outcomes={'target': 153, 'stop': 56, 'time': 19} hit%=46%
+   gross per trade -0.088%  total -20.00%  t=-3.70
+   net of 0.04% RT fees: per trade -0.128%  total -29.12%
+   net of 0.10% RT fees: per trade -0.188%  total -42.80%
+   net of 0.20% RT fees: per trade -0.288%  total -65.60%
+baseline sd of forward returns: 5m 0.155%, 15m 0.269%, 30m 0.385%, 60m 0.543%
+
+=== ETH-USD  k=5-sigma 5-min move, volume>=4x median  (90 days) ===
+events: 135  (down moves: 59, up moves: 76)
+mean |trigger move|: 0.79%
+no exhaustion within 30 min (cascade kept going): 0
+after trigger, price ran a further -0.36% on average (median -0.11%) before stalling; avg wait 5.5 min
+entry    horizon     N     mean   median   hit%      t
+naive         5m   135  -0.046%   0.002%    50%  -1.32
+naive        15m   135  -0.090%   0.073%    59%  -1.35
+naive        30m   135  -0.051%   0.048%    56%  -0.71
+naive        60m   135  -0.080%   0.037%    53%  -0.89
+exh           5m   135  -0.004%   0.035%    58%  -0.17
+exh          15m   135  -0.016%   0.027%    53%  -0.33
+exh          30m   135  -0.007%   0.065%    55%  -0.11
+exh          60m   135  -0.024%   0.061%    53%  -0.33
+30-min excursions after exhaustion entry: mean adverse -0.53% (median -0.27%), mean favorable 0.43% (median 0.31%)
+rule (stop 20% beyond extreme, target 50% retrace, 30m time stop): N=135 outcomes={'target': 88, 'stop': 34, 'time': 13} hit%=53%
+   gross per trade -0.077%  total -10.33%  t=-2.05
+   net of 0.04% RT fees: per trade -0.117%  total -15.73%
+   net of 0.10% RT fees: per trade -0.177%  total -23.83%
+   net of 0.20% RT fees: per trade -0.277%  total -37.33%
+baseline sd of forward returns: 5m 0.155%, 15m 0.269%, 30m 0.385%, 60m 0.543%
